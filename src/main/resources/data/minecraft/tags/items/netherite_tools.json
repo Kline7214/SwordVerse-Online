@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:netherite_battle_axe",
+    "swordverse_online:netherite_dagger",
+    "swordverse_online:netherite_rapier",
+    "swordverse_online:netherite_spear",
+    "swordverse_online:netherite_mace",
+    "swordverse_online:netherite_hammer",
+    "minecraft:netherite_sword",
+    "minecraft:netherite_shovel",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_axe",
+    "minecraft:netherite_hoe"
+  ]
+}

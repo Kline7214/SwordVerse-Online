@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "bronze_dagger",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Bronze Dagger",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 5,
+    "damageVsEntity": 2.5,
+    "usageCount": 131,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BronzeDagger"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

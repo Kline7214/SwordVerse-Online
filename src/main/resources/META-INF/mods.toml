@@ -1,0 +1,46 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="swordverse_online"
+version="1.0.0"
+displayName="Swordverse Online"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="kjdio, MCreator"
+
+[[dependencies.swordverse_online]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.swordverse_online]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.swordverse_online]]
+    modId="curios_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.swordverse_online]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.swordverse_online]]
+    modId="playeranimator"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

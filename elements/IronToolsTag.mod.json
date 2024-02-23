@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:IronBattleAxe"
+      },
+      {
+        "value": "CUSTOM:IronSpear"
+      },
+      {
+        "value": "CUSTOM:IronRapier"
+      },
+      {
+        "value": "CUSTOM:IronDagger"
+      },
+      {
+        "value": "CUSTOM:IronMace"
+      },
+      {
+        "value": "CUSTOM:IronHammer"
+      },
+      {
+        "value": "Items.IRON_SWORD"
+      },
+      {
+        "value": "Items.IRON_SHOVEL"
+      },
+      {
+        "value": "Items.IRON_PICKAXE"
+      },
+      {
+        "value": "Items.IRON_AXE"
+      },
+      {
+        "value": "Items.IRON_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "iron_tools",
+    "namespace": "minecraft"
+  }
+}

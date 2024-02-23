@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "bronze",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    },
+    {
+      "item": "swordverse_online:bronze_ingot"
+    }
+  ],
+  "result": {
+    "item": "swordverse_online:bronze_block",
+    "count": 1
+  }
+}

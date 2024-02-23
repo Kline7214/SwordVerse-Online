@@ -1,0 +1,31 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.STONE_SWORD"
+      },
+      {
+        "value": "Items.STONE_SHOVEL"
+      },
+      {
+        "value": "Items.STONE_PICKAXE"
+      },
+      {
+        "value": "Items.STONE_AXE"
+      },
+      {
+        "value": "Items.STONE_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_e",
+    "namespace": "minecraft"
+  }
+}

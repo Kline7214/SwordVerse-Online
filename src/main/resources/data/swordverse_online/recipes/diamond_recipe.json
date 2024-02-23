@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "diamond",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    },
+    {
+      "item": "swordverse_online:diamond_shard"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

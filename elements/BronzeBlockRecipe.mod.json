@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "bronze",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BronzeBlock"
+    },
+    "name": "bronze_block_recipe",
+    "namespace": "mod"
+  }
+}

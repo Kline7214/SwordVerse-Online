@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "diamond_mace",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Diamond Mace",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 3,
+    "efficiency": 4.0,
+    "attackSpeed": 5.0,
+    "enchantability": 10,
+    "damageVsEntity": 6.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DiamondMace"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

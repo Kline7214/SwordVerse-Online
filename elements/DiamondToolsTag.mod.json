@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:DiamondSpear"
+      },
+      {
+        "value": "CUSTOM:DiamondDagger"
+      },
+      {
+        "value": "CUSTOM:DiamondRapier"
+      },
+      {
+        "value": "CUSTOM:DiamondBattleAxe"
+      },
+      {
+        "value": "CUSTOM:DiamondMace"
+      },
+      {
+        "value": "CUSTOM:DiamondHammer"
+      },
+      {
+        "value": "Items.DIAMOND_SWORD"
+      },
+      {
+        "value": "Items.DIAMOND_SHOVEL"
+      },
+      {
+        "value": "Items.DIAMOND_PICKAXE"
+      },
+      {
+        "value": "Items.DIAMOND_AXE"
+      },
+      {
+        "value": "Items.DIAMOND_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "diamond_tools",
+    "namespace": "minecraft"
+  }
+}

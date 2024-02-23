@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.IRON_SWORD"
+      },
+      {
+        "value": "Items.IRON_SHOVEL"
+      },
+      {
+        "value": "Items.IRON_PICKAXE"
+      },
+      {
+        "value": "Items.IRON_HOE"
+      },
+      {
+        "value": "Items.IRON_AXE"
+      },
+      {
+        "value": "Items.IRON_HELMET"
+      },
+      {
+        "value": "Items.IRON_CHESTPLATE"
+      },
+      {
+        "value": "Items.IRON_LEGGINGS"
+      },
+      {
+        "value": "Items.IRON_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_c",
+    "namespace": "minecraft"
+  }
+}

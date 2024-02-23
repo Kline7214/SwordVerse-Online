@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:NetheriteBattleAxe"
+      },
+      {
+        "value": "CUSTOM:NetheriteDagger"
+      },
+      {
+        "value": "CUSTOM:NetheriteRapier"
+      },
+      {
+        "value": "CUSTOM:NetheriteSpear"
+      },
+      {
+        "value": "CUSTOM:NetheriteMace"
+      },
+      {
+        "value": "CUSTOM:NetheriteHammer"
+      },
+      {
+        "value": "Items.NETHERITE_SWORD"
+      },
+      {
+        "value": "Items.NETHERITE_SHOVEL"
+      },
+      {
+        "value": "Items.NETHERITE_PICKAXE"
+      },
+      {
+        "value": "Items.NETHERITE_AXE"
+      },
+      {
+        "value": "Items.NETHERITE_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "netherite_tools",
+    "namespace": "minecraft"
+  }
+}

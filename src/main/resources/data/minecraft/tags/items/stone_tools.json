@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:stone_battle_axe",
+    "swordverse_online:stone_spear",
+    "swordverse_online:stone_dagger",
+    "swordverse_online:stone_rapier",
+    "swordverse_online:stone_mace",
+    "swordverse_online:stone_hammer",
+    "minecraft:stone_sword",
+    "minecraft:stone_shovel",
+    "minecraft:stone_pickaxe",
+    "minecraft:stone_axe",
+    "minecraft:stone_hoe"
+  ]
+}

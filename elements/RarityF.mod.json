@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.WOODEN_SWORD"
+      },
+      {
+        "value": "Items.WOODEN_SHOVEL"
+      },
+      {
+        "value": "Items.WOODEN_PICKAXE"
+      },
+      {
+        "value": "Items.WOODEN_AXE"
+      },
+      {
+        "value": "Items.WOODEN_HOE"
+      },
+      {
+        "value": "Items.SHIELD"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_f",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:iron_battle_axe",
+    "swordverse_online:iron_spear",
+    "swordverse_online:iron_rapier",
+    "swordverse_online:iron_dagger",
+    "swordverse_online:iron_mace",
+    "swordverse_online:iron_hammer",
+    "minecraft:iron_sword",
+    "minecraft:iron_shovel",
+    "minecraft:iron_pickaxe",
+    "minecraft:iron_axe",
+    "minecraft:iron_hoe"
+  ]
+}

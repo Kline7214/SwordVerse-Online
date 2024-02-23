@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "bronze",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "smithingInputTemplateStack": {
+      "value": ""
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:BronzeIngot"
+    },
+    "name": "bronze_ingot_recipe",
+    "namespace": "mod"
+  }
+}

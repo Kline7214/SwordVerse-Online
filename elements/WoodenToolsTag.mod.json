@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WoodenBattleAxe"
+      },
+      {
+        "value": "CUSTOM:WoodenSpear"
+      },
+      {
+        "value": "CUSTOM:WoodenDagger"
+      },
+      {
+        "value": "CUSTOM:WoodenRapier"
+      },
+      {
+        "value": "CUSTOM:WoodenMace"
+      },
+      {
+        "value": "CUSTOM:WoodenHammer"
+      },
+      {
+        "value": "Items.WOODEN_SWORD"
+      },
+      {
+        "value": "Items.WOODEN_SHOVEL"
+      },
+      {
+        "value": "Items.WOODEN_PICKAXE"
+      },
+      {
+        "value": "Items.WOODEN_AXE"
+      },
+      {
+        "value": "Items.WOODEN_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "wooden_tools",
+    "namespace": "minecraft"
+  }
+}

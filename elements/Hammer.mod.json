@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WoodenHammer"
+      },
+      {
+        "value": "CUSTOM:StoneHammer"
+      },
+      {
+        "value": "CUSTOM:IronHammer"
+      },
+      {
+        "value": "CUSTOM:GoldenHammer"
+      },
+      {
+        "value": "CUSTOM:DiamondHammer"
+      },
+      {
+        "value": "CUSTOM:NetheriteHammer"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "hammer",
+    "namespace": "minecraft"
+  }
+}

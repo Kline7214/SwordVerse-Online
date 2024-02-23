@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "P",
+    "keyBindingName": "Stat Screen Keybind",
+    "keyBindingCategoryKey": "swordverse_online",
+    "onKeyPressed": {
+      "name": "StatScreenKeybindOnKeyPressed"
+    }
+  }
+}

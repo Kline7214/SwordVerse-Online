@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:golden_battle_axe",
+    "swordverse_online:golden_spear",
+    "swordverse_online:golden_dagger",
+    "swordverse_online:golden_rapier",
+    "swordverse_online:golden_mace",
+    "swordverse_online:golden_hammer",
+    "minecraft:golden_sword",
+    "minecraft:golden_shovel",
+    "minecraft:golden_pickaxe",
+    "minecraft:golden_axe",
+    "minecraft:golden_hoe"
+  ]
+}

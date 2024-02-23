@@ -1,0 +1,56 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "special_dark_repulser",
+    "customModelName": "Ranged item",
+    "customProperties": {},
+    "states": [],
+    "name": "Dark Repulser",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 100,
+    "toolType": 1.5,
+    "damageCount": 1200,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 340.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "rangedUseCondition": {
+      "name": "ReturnFalse"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "block"
+  }
+}

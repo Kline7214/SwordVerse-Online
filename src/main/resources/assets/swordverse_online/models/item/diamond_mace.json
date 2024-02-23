@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "swordverse_online:item/diamond_mace"
+  }
+}

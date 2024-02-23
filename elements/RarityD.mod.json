@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.GOLDEN_SWORD"
+      },
+      {
+        "value": "Items.GOLDEN_SHOVEL"
+      },
+      {
+        "value": "Items.GOLDEN_PICKAXE"
+      },
+      {
+        "value": "Items.GOLDEN_AXE"
+      },
+      {
+        "value": "Items.GOLDEN_HOE"
+      },
+      {
+        "value": "Items.GOLDEN_HELMET"
+      },
+      {
+        "value": "Items.GOLDEN_CHESTPLATE"
+      },
+      {
+        "value": "Items.GOLDEN_LEGGINGS"
+      },
+      {
+        "value": "Items.GOLDEN_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_d",
+    "namespace": "minecraft"
+  }
+}

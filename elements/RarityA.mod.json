@@ -1,0 +1,40 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.NETHERITE_SWORD"
+      },
+      {
+        "value": "Items.NETHERITE_SHOVEL"
+      },
+      {
+        "value": "Items.NETHERITE_AXE"
+      },
+      {
+        "value": "Items.NETHERITE_HOE"
+      },
+      {
+        "value": "Items.NETHERITE_HELMET"
+      },
+      {
+        "value": "Items.NETHERITE_CHESTPLATE"
+      },
+      {
+        "value": "Items.NETHERITE_LEGGINGS"
+      },
+      {
+        "value": "Items.NETHERITE_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_a",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:bronze_sword",
+    "swordverse_online:bronze_rapier",
+    "swordverse_online:bronze_dagger",
+    "swordverse_online:bronze_lance",
+    "swordverse_online:bronze_battle_axe",
+    "swordverse_online:bronze_mace"
+  ]
+}

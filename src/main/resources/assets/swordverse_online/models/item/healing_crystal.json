@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "swordverse_online:item/healing_crystal"
+  }
+}

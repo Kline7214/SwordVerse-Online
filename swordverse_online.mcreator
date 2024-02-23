@@ -1,0 +1,2854 @@
+{
+  "mod_elements": [
+    {
+      "name": "CuringCrystal",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/CuringCrystalItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/curing_crystal.json"
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "HealingCrystal",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/healing_crystal.json",
+          "src/main/java/net/mcreator/swordverseonline/item/HealingCrystalItem.java"
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "TeleportCrystal",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/TeleportCrystalItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/teleport_crystal.json"
+        ]
+      },
+      "path": "~/Crystals/Teleport Crystal"
+    },
+    {
+      "name": "CuringCrystalUse",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curing_crystal_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/CuringCrystalUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "HealingCrystalUse",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_crystal_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/HealingCrystalUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "TeleportCrystalAction",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_crystal_action",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/TeleportCrystalActionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Crystals/Teleport Crystal"
+    },
+    {
+      "name": "TeleportCrystalUse",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_crystal_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/TeleportCrystalUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystals/Teleport Crystal"
+    },
+    {
+      "name": "BlacksmithGui",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacksmith_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/BlacksmithGuiScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/network/BlacksmithGuiButtonMessage.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/BlacksmithGuiMenu.java"
+        ]
+      },
+      "path": "~/Blacksmith"
+    },
+    {
+      "name": "Appraisal",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/AppraisalMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/AppraisalScreen.java"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal"
+    },
+    {
+      "name": "WTypeProc",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "w_type_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/WTypeProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/WeaponTypeProc"
+    },
+    {
+      "name": "Crafting",
+      "type": "gui",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/CraftingScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/CraftingMenu.java"
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "RemoveVanWeaponRecipesProc",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_van_weapon_recipes_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RemoveVanWeaponRecipesProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "SwordCraftProc",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/SwordCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "OpenCrafting",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_crafting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/OpenCraftingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "OpenAppraisal",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_appraisal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/OpenAppraisalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal"
+    },
+    {
+      "name": "Blacksmith",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacksmith",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/entity/BlacksmithEntity.java",
+          "src/main/java/net/mcreator/swordverseonline/client/renderer/BlacksmithRenderer.java",
+          "src/main/resources/data/swordverse_online/forge/biome_modifier/blacksmith_biome_modifier.json",
+          "src/main/resources/assets/swordverse_online/models/item/blacksmith_spawn_egg.json"
+        ]
+      },
+      "path": "~/Blacksmith"
+    },
+    {
+      "name": "BlacksmithSpawn",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacksmith_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/BlacksmithSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith"
+    },
+    {
+      "name": "AppraisalTypeProc",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal_type_proc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AppraisalTypeProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/WeaponTypeProc"
+    },
+    {
+      "name": "RarityE",
+      "type": "tag",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_e.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityF",
+      "type": "tag",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_f.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityA",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_a.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityB",
+      "type": "tag",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_b.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityC",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_c.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityD",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/rarity_d.json"
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "RarityProc",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RarityProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "AppraisalRarityProc",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal_rarity_proc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AppraisalRarityProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Rarity"
+    },
+    {
+      "name": "BronzeIngot",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/bronze_ingot.json",
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeIngotItem.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeIngotRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/swordverse_online/recipes/bronze_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeSword",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeSwordItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_sword.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "Bronze",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_chestplate.json",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_boots.json",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_leggings.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeRapier",
+      "type": "tool",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_rapier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/bronze_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeRapierItem.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeDagger",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_dagger.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeLance",
+      "type": "tool",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_lance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeLanceItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_lance.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeBattleAxe",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_battle_axe.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "IronBattleAxe",
+      "type": "tool",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/IronBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "IronSpear",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/IronSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_spear.json"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "IronRapier",
+      "type": "tool",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_rapier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/iron_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/IronRapierItem.java"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "IronDagger",
+      "type": "tool",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/IronDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_dagger.json"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "NetheriteBattleAxe",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "NetheriteDagger",
+      "type": "tool",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_dagger.json"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "NetheriteRapier",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_rapier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteRapierItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_rapier.json"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "NetheriteSpear",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_spear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/netherite_spear.json",
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteSpearItem.java"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "GoldenBattleAxe",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/golden_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "StoneBattleAxe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/StoneBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/stone_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "WoodenBattleAxe",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "GoldenSpear",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/golden_spear.json"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "DiamondSpear",
+      "type": "tool",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/diamond_spear.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "StoneSpear",
+      "type": "tool",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/StoneSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/stone_spear.json"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "WoodenSpear",
+      "type": "tool",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_spear.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "GoldenDagger",
+      "type": "tool",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/golden_dagger.json"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "DiamondDagger",
+      "type": "tool",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_dagger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/diamond_dagger.json",
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondDaggerItem.java"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "StoneDagger",
+      "type": "tool",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/StoneDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/stone_dagger.json"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "WoodenDagger",
+      "type": "tool",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenDaggerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_dagger.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "DiamondRapier",
+      "type": "tool",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_rapier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/diamond_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondRapierItem.java"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "GoldenRapier",
+      "type": "tool",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_rapier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenRapierItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/golden_rapier.json"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "DiamondBattleAxe",
+      "type": "tool",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_battle_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondBattleAxeItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/diamond_battle_axe.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "StoneRapier",
+      "type": "tool",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_rapier",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/stone_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/StoneRapierItem.java"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "WoodenRapier",
+      "type": "tool",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_rapier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenRapierItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_rapier.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "DaggerCraftProc",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dagger_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/DaggerCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "SpearCraftProc",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/SpearCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "RapierCraftProc",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rapier_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RapierCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "BronzeNugget",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_nugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeNuggetItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_nugget.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "DiamondShard",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondShardItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/diamond_shard.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "BronzeTag",
+      "type": "tag",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/bronze_tag.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeNuggetRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_nugget_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/swordverse_online/recipes/bronze_nugget_recipe.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "DiamondShardRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_shard_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/swordverse_online/recipes/diamond_shard_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "DiamondRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/swordverse_online/recipes/diamond_recipe.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "DiamondMace",
+      "type": "tool",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/diamond_mace.json",
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondMaceItem.java"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "GoldenMace",
+      "type": "tool",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/golden_mace.json",
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenMaceItem.java"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "IronMace",
+      "type": "tool",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_mace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/IronMaceItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_mace.json"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "StoneMace",
+      "type": "tool",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/stone_mace.json",
+          "src/main/java/net/mcreator/swordverseonline/item/StoneMaceItem.java"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "WoodenMace",
+      "type": "tool",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_mace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenMaceItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_mace.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "NetheriteMace",
+      "type": "tool",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_mace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteMaceItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_mace.json"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "BronzeMace",
+      "type": "tool",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/bronze_mace.json",
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeMaceItem.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "MaceCraftProc",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/MaceCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "AppraisalAttackProc",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal_attack_proc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AppraisalAttackProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Attack"
+    },
+    {
+      "name": "AppraisalElementProc",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal_element_proc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AppraisalElementProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Element"
+    },
+    {
+      "name": "AppraisalGradeProc",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "appraisal_grade_proc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AppraisalGradeProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Appraisal/Grade"
+    },
+    {
+      "name": "Upgrade",
+      "type": "gui",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/UpgradeScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/UpgradeMenu.java"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModB",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_b",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModBItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_b.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModA",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModAItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_a.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModS",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_s",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModSItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_s.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModSS",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_ss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModSSItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_ss.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModSSS",
+      "type": "item",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_sss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModSSSItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_sss.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "UpgradeModSSSPlus",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_sss_plus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_sss_plus.json",
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModSSSPlusItem.java"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "WoodenHammer",
+      "type": "item",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenHammerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/wooden_hammer.json"
+        ]
+      },
+      "path": "~/Misc/Wooden"
+    },
+    {
+      "name": "StoneHammer",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/StoneHammerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/stone_hammer.json"
+        ]
+      },
+      "path": "~/Misc/Stone"
+    },
+    {
+      "name": "IronHammer",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/IronHammerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_hammer.json"
+        ]
+      },
+      "path": "~/Misc/Iron"
+    },
+    {
+      "name": "GoldenHammer",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/golden_hammer.json",
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenHammerItem.java"
+        ]
+      },
+      "path": "~/Misc/Gold"
+    },
+    {
+      "name": "DiamondHammer",
+      "type": "item",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondHammerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/diamond_hammer.json"
+        ]
+      },
+      "path": "~/Misc/Diamond"
+    },
+    {
+      "name": "NetheriteHammer",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteHammerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_hammer.json"
+        ]
+      },
+      "path": "~/Misc/Netherite"
+    },
+    {
+      "name": "HammerCraftProc",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_craft_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/HammerCraftProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Crafting"
+    },
+    {
+      "name": "Hammer",
+      "type": "tag",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/hammer.json"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "WolfClaw",
+      "type": "item",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wolf_claw",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/wolf_claw.json",
+          "src/main/java/net/mcreator/swordverseonline/item/WolfClawItem.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Items"
+    },
+    {
+      "name": "BoarHide",
+      "type": "item",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boar_hide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/BoarHideItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/boar_hide.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Items"
+    },
+    {
+      "name": "PointedStinger",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pointed_stinger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/pointed_stinger.json",
+          "src/main/java/net/mcreator/swordverseonline/item/PointedStingerItem.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Items"
+    },
+    {
+      "name": "UpgradeModC",
+      "type": "item",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade_mod_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/upgrade_mod_c.json",
+          "src/main/java/net/mcreator/swordverseonline/item/UpgradeModCItem.java"
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "OpenUpgrade",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/OpenUpgradeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blacksmith/Upgrade"
+    },
+    {
+      "name": "BronzeBlock",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/blockstates/bronze_block.json",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_block.json",
+          "src/main/resources/assets/swordverse_online/models/block/bronze_block.json",
+          "src/main/java/net/mcreator/swordverseonline/block/BronzeBlockBlock.java"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "BronzeBlockRecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/swordverse_online/recipes/bronze_block_recipe.json"
+        ]
+      },
+      "path": "~/Floor 1-10/Weapon n armor/Bronze"
+    },
+    {
+      "name": "PlayerSTG",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerSTGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Strength"
+    },
+    {
+      "name": "PlayerSPD",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_spd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerSPDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Speed"
+    },
+    {
+      "name": "PlayerMP",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_mp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerMPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Magic Power"
+    },
+    {
+      "name": "PlayerHP",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_hp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerHPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Health"
+    },
+    {
+      "name": "PlayerEXP",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerEXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Experiance"
+    },
+    {
+      "name": "LevelUpProc",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/LevelUpProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "StatScreen",
+      "type": "gui",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/StatScreenMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/StatScreenScreen.java"
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "RenderPlayerInStatScreen",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_player_in_stat_screen",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderPlayerInStatScreenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "RenderPlayerName",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_player_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "RenderHP",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_hp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderHPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Health"
+    },
+    {
+      "name": "RenderMP",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_mp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderMPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Magic Power"
+    },
+    {
+      "name": "RenderSTG",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_stg",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderSTGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Strength"
+    },
+    {
+      "name": "RenderEXP",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_exp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderEXPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Experiance"
+    },
+    {
+      "name": "RenderSPD",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_spd",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderSPDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Speed"
+    },
+    {
+      "name": "RenderLv",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_lv",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/RenderLvProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "StatScreenKeybind",
+      "type": "keybind",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_screen_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/network/StatScreenKeybindMessage.java"
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "StatScreenKeybindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_screen_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenKeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "AddHP",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_hp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AddHPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "AddSTG",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_stg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AddSTGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "AddSPD",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_spd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AddSPDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "AddMP",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_mp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/AddMPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Level"
+    },
+    {
+      "name": "StatScreenWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_screen_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "StatScreenThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_screen_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/GUI"
+    },
+    {
+      "name": "ReturnFalse",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_false",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/ReturnFalseProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Special Items"
+    },
+    {
+      "name": "Elucidator",
+      "type": "item",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elucidator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/item/ElucidatorItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/elucidator.json"
+        ]
+      },
+      "path": "~/Special Items/Elucidator"
+    },
+    {
+      "name": "ElucidatorDmg",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elucidator_dmg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/ElucidatorDmgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Special Items/Elucidator"
+    },
+    {
+      "name": "DarkRepulser",
+      "type": "item",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_repulser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/swordverse_online/models/item/dark_repulser.json",
+          "src/main/java/net/mcreator/swordverseonline/item/DarkRepulserItem.java"
+        ]
+      },
+      "path": "~/Special Items/Dark Repulser"
+    },
+    {
+      "name": "DarkRepulserDmg",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_repulser_dmg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/DarkRepulserDmgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Special Items/Dark Repulser"
+    },
+    {
+      "name": "WoodenToolsTag",
+      "type": "tag",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/wooden_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "StoneToolTag",
+      "type": "tag",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_tool_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/stone_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "GoldenToolsTag",
+      "type": "tag",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/golden_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "IronToolsTag",
+      "type": "tag",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/iron_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "BronzeToolsTag",
+      "type": "tag",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/bronze_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "DiamondToolsTag",
+      "type": "tag",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/diamond_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "NetheriteToolsTag",
+      "type": "tag",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_tools_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/netherite_tools.json"
+        ]
+      },
+      "path": "~/Stats/Strength/tags"
+    },
+    {
+      "name": "PlayerItemPickUpAndUse",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_item_pick_up_and_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerItemPickUpAndUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Strength"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Strength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "5.0"
+    },
+    {
+      "name": "Speed",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.1"
+    },
+    {
+      "name": "healthPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "magicPower",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "points",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "experience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "maxExperience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "25.0"
+    },
+    {
+      "name": "statKeybind",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.swordverse_online.iron_spear": "Iron Spear",
+      "item.swordverse_online.bronze_lance": "Bronze Lance",
+      "item.swordverse_online.netherite_spear": "Netherite Spear",
+      "item.swordverse_online.golden_spear": "Golden Spear",
+      "gui.swordverse_online.stat_screen.label_exp": "EXP:",
+      "item.swordverse_online.bronze_boots": "Bronze Boots",
+      "item.swordverse_online.stone_hammer": "Stone Hammer",
+      "gui.swordverse_online.stat_screen.label_stg": "STG:",
+      "gui.swordverse_online.stat_screen.label_spd": "SPD:",
+      "item.swordverse_online.bronze_leggings": "Bronze Leggings",
+      "item.swordverse_online.curing_crystal": "Curing Crystal",
+      "block.swordverse_online.bronze_block": "Block Of Bronze",
+      "item.swordverse_online.blacksmith_spawn_egg": "Blacksmith Spawn Egg",
+      "item.swordverse_online.diamond_dagger": "Diamond Dagger",
+      "item.swordverse_online.pointed_stinger": "Pointed Stinger",
+      "gui.swordverse_online.stat_screen.label_mp": "MP:",
+      "item.swordverse_online.stone_spear": "Stone Spear",
+      "gui.swordverse_online.blacksmith_gui.label_weapon_crafting": "Crafting",
+      "gui.swordverse_online.appraisal.label_grade": "Grade:",
+      "item.swordverse_online.stone_mace": "Stone Mace",
+      "item.swordverse_online.diamond_mace": "Diamond Mace",
+      "item.swordverse_online.stone_battle_axe": "Stone Battle Axe",
+      "gui.swordverse_online.appraisal.label_weight": "Weight:",
+      "item.swordverse_online.diamond_spear": "Diamond Spear",
+      "item.swordverse_online.iron_hammer": "Iron Hammer",
+      "item.swordverse_online.bronze_ingot": "Bronze Ingot",
+      "item.swordverse_online.wooden_hammer": "Wooden Hammer",
+      "item.swordverse_online.netherite_battle_axe": "Netherite Battle Axe",
+      "item.swordverse_online.diamond_rapier": "Diamond Rapier",
+      "item.swordverse_online.golden_mace": "Golden Mace",
+      "gui.swordverse_online.appraisal.label_rarity": "Rarity:",
+      "item.swordverse_online.stone_dagger": "Stone Dagger",
+      "item.swordverse_online.netherite_mace": "Netherite Mace",
+      "item.swordverse_online.elucidator": "Elucidator",
+      "item.swordverse_online.wolf_claw": "Wolf Claw",
+      "item.swordverse_online.bronze_mace": "Bronze Mace",
+      "item.swordverse_online.dark_repulser": "Dark Repulser",
+      "item.swordverse_online.bronze_dagger": "Bronze Dagger",
+      "item.swordverse_online.bronze_battle_axe": "Bronze Battle Axe",
+      "item.swordverse_online.upgrade_mod_sss": "Upgrade Mod SSS",
+      "item.swordverse_online.stone_rapier": "Stone Rapier",
+      "item.swordverse_online.wooden_rapier": "Wooden Rapier",
+      "item.swordverse_online.wooden_battle_axe": "Wooden Battle Axe",
+      "item.swordverse_online.diamond_shard": "Diamond Shard",
+      "entity.swordverse_online.blacksmith": "Blacksmith",
+      "item.swordverse_online.boar_hide": "Boar Hide",
+      "item.swordverse_online.diamond_battle_axe": "Diamond Battle Axe",
+      "item.swordverse_online.upgrade_mod_s": "Upgrade Mod S",
+      "item.swordverse_online.golden_rapier": "Golden Rapier",
+      "item.swordverse_online.wooden_spear": "Wooden Spear",
+      "item.swordverse_online.iron_dagger": "Iron Dagger",
+      "gui.swordverse_online.blacksmith_gui.label_blacksmith": "Blacksmith",
+      "item.swordverse_online.wooden_dagger": "Wooden Dagger",
+      "item.swordverse_online.iron_mace": "Iron Mace",
+      "gui.swordverse_online.appraisal.label_damage": "Attack:",
+      "gui.swordverse_online.appraisal.label_type": "Type:",
+      "item.swordverse_online.upgrade_mod_c": "Upgrade Mod C",
+      "item.swordverse_online.iron_battle_axe": "Iron Battle Axe",
+      "item.swordverse_online.bronze_nugget": "Bronze Nugget",
+      "gui.swordverse_online.stat_screen.label_lv": "Lv:",
+      "item.swordverse_online.teleport_crystal": "Teleport Crystal",
+      "item.swordverse_online.bronze_rapier": "Bronze Rapier",
+      "item.swordverse_online.upgrade_mod_b": "Upgrade Mod B",
+      "gui.swordverse_online.stat_screen.label_hp": "HP:",
+      "gui.swordverse_online.crafting.label_crafting": "Crafting",
+      "item.swordverse_online.upgrade_mod_a": "Upgrade Mod A",
+      "item.swordverse_online.diamond_hammer": "Diamond Hammer",
+      "gui.swordverse_online.blacksmith_gui.label_appraisal": "Appraisal",
+      "gui.swordverse_online.appraisal.label_durability": "Element:",
+      "item.swordverse_online.netherite_hammer": "Netherite Hammer",
+      "item.swordverse_online.iron_rapier": "Iron Rapier",
+      "gui.swordverse_online.blacksmith_gui.label_upgrade": "Upgrade",
+      "item.swordverse_online.netherite_rapier": "Netherite Rapier",
+      "item.swordverse_online.golden_dagger": "Golden Dagger",
+      "item.swordverse_online.wooden_mace": "Wooden Mace",
+      "item.swordverse_online.bronze_sword": "Bronze Sword",
+      "item.swordverse_online.golden_battle_axe": "Golden Battle Axe",
+      "item.swordverse_online.upgrade_mod_sss_plus": "Upgrade Mod SSS+",
+      "item.swordverse_online.bronze_chestplate": "Bronze Chestplate",
+      "item.swordverse_online.healing_crystal": "Healing Crystal",
+      "gui.swordverse_online.appraisal.label_appraisal": "Appraisal",
+      "key.swordverse_online.stat_screen_keybind": "Stat Screen Keybind",
+      "item.swordverse_online.golden_hammer": "Golden Hammer",
+      "item.swordverse_online.upgrade_mod_ss": "Upgrade Mod SS",
+      "item.swordverse_online.netherite_dagger": "Netherite Dagger"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Crystals",
+        "children": [
+          {
+            "name": "Teleport Crystal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blacksmith",
+        "children": [
+          {
+            "name": "Appraisal",
+            "children": [
+              {
+                "name": "Rarity",
+                "children": []
+              },
+              {
+                "name": "WeaponTypeProc",
+                "children": []
+              },
+              {
+                "name": "Attack",
+                "children": []
+              },
+              {
+                "name": "Grade",
+                "children": []
+              },
+              {
+                "name": "Element",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Crafting",
+            "children": []
+          },
+          {
+            "name": "Upgrade",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Floor 1-10",
+        "children": [
+          {
+            "name": "Weapon n armor",
+            "children": [
+              {
+                "name": "Bronze",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Mobs",
+            "children": []
+          },
+          {
+            "name": "Items",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Misc",
+        "children": [
+          {
+            "name": "Iron",
+            "children": []
+          },
+          {
+            "name": "Gold",
+            "children": []
+          },
+          {
+            "name": "Stone",
+            "children": []
+          },
+          {
+            "name": "Wooden",
+            "children": []
+          },
+          {
+            "name": "Netherite",
+            "children": []
+          },
+          {
+            "name": "Diamond",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Stats",
+        "children": [
+          {
+            "name": "Health",
+            "children": []
+          },
+          {
+            "name": "Strength",
+            "children": [
+              {
+                "name": "tags",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Speed",
+            "children": []
+          },
+          {
+            "name": "Magic Power",
+            "children": []
+          },
+          {
+            "name": "Experiance",
+            "children": []
+          },
+          {
+            "name": "GUI",
+            "children": []
+          },
+          {
+            "name": "Level",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Special Items",
+        "children": [
+          {
+            "name": "Elucidator",
+            "children": []
+          },
+          {
+            "name": "Dark Repulser",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "swordverse_online",
+    "modName": "Swordverse Online",
+    "version": "1.0.0",
+    "author": "kjdio, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "mcreator_link",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.swordverseonline",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

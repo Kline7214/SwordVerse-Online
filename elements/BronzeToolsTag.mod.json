@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BronzeSword"
+      },
+      {
+        "value": "CUSTOM:BronzeRapier"
+      },
+      {
+        "value": "CUSTOM:BronzeDagger"
+      },
+      {
+        "value": "CUSTOM:BronzeLance"
+      },
+      {
+        "value": "CUSTOM:BronzeBattleAxe"
+      },
+      {
+        "value": "CUSTOM:BronzeMace"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "bronze_tools",
+    "namespace": "minecraft"
+  }
+}

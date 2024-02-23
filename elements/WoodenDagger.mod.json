@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "wooden_dagger",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Wooden Dagger",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 0,
+    "efficiency": 2.0,
+    "attackSpeed": 0.9,
+    "enchantability": 15,
+    "damageVsEntity": 2.5,
+    "usageCount": 59,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:WoodenDagger"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

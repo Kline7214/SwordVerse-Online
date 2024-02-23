@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:diamond_spear",
+    "swordverse_online:diamond_dagger",
+    "swordverse_online:diamond_rapier",
+    "swordverse_online:diamond_battle_axe",
+    "swordverse_online:diamond_mace",
+    "swordverse_online:diamond_hammer",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_axe",
+    "minecraft:diamond_hoe"
+  ]
+}

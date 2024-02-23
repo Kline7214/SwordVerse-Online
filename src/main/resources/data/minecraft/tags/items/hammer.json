@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:wooden_hammer",
+    "swordverse_online:stone_hammer",
+    "swordverse_online:iron_hammer",
+    "swordverse_online:golden_hammer",
+    "swordverse_online:diamond_hammer",
+    "swordverse_online:netherite_hammer"
+  ]
+}

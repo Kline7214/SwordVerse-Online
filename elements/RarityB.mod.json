@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.DIAMOND_SWORD"
+      },
+      {
+        "value": "Items.DIAMOND_SHOVEL"
+      },
+      {
+        "value": "Items.DIAMOND_PICKAXE"
+      },
+      {
+        "value": "Items.DIAMOND_AXE"
+      },
+      {
+        "value": "Items.DIAMOND_HOE"
+      },
+      {
+        "value": "Items.DIAMOND_HELMET"
+      },
+      {
+        "value": "Items.DIAMOND_CHESTPLATE"
+      },
+      {
+        "value": "Items.DIAMOND_LEGGINGS"
+      },
+      {
+        "value": "Items.DIAMOND_BOOTS"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "rarity_b",
+    "namespace": "minecraft"
+  }
+}

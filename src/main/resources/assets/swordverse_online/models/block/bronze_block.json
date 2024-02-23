@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "swordverse_online:block/bronze_block",
+    "up": "swordverse_online:block/bronze_block",
+    "north": "swordverse_online:block/bronze_block",
+    "east": "swordverse_online:block/bronze_block",
+    "south": "swordverse_online:block/bronze_block",
+    "west": "swordverse_online:block/bronze_block",
+    "particle": "swordverse_online:block/bronze_block"
+  },
+  "render_type": "solid"
+}

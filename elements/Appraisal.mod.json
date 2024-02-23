@@ -1,0 +1,234 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 2,
+    "height": 2,
+    "inventoryOffsetX": -46,
+    "inventoryOffsetY": -41,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_appraisal.png",
+          "use1Xscale": false,
+          "x": 85,
+          "y": 41
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 295,
+          "y": 70
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_type",
+          "text": {
+            "fixedValue": "Type:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rarity",
+          "text": {
+            "fixedValue": "Rarity:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_damage",
+          "text": {
+            "fixedValue": "Attack:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weight",
+          "text": {
+            "fixedValue": "Weight:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_durability",
+          "text": {
+            "fixedValue": "Element:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 141
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_appraisal_type_proc",
+          "text": {
+            "fixedValue": "",
+            "name": "AppraisalTypeProc"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_appraisal_rarity_proc",
+          "text": {
+            "fixedValue": "",
+            "name": "AppraisalRarityProc"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_appraisal_element_proc",
+          "text": {
+            "fixedValue": "",
+            "name": "AppraisalElementProc"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_grade",
+          "text": {
+            "fixedValue": "Grade:"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 252,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_appraisal_attack_proc",
+          "text": {
+            "fixedValue": "",
+            "name": "AppraisalAttackProc"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 118
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_appraisal_grade_proc",
+          "text": {
+            "fixedValue": "",
+            "name": "AppraisalGradeProc"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 310,
+          "y": 153
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_appraisal",
+          "text": {
+            "fixedValue": "Appraisal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 49
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

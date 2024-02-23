@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BronzeIngot"
+      },
+      {
+        "value": "CUSTOM:BronzeSword"
+      },
+      {
+        "value": "CUSTOM:Bronze.body"
+      },
+      {
+        "value": "CUSTOM:Bronze.legs"
+      },
+      {
+        "value": "CUSTOM:Bronze.boots"
+      },
+      {
+        "value": "CUSTOM:BronzeRapier"
+      },
+      {
+        "value": "CUSTOM:BronzeDagger"
+      },
+      {
+        "value": "CUSTOM:BronzeLance"
+      },
+      {
+        "value": "CUSTOM:BronzeBattleAxe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "bronze_tag",
+    "namespace": "minecraft"
+  }
+}

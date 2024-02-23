@@ -1,0 +1,49 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:GoldenBattleAxe"
+      },
+      {
+        "value": "CUSTOM:GoldenSpear"
+      },
+      {
+        "value": "CUSTOM:GoldenDagger"
+      },
+      {
+        "value": "CUSTOM:GoldenRapier"
+      },
+      {
+        "value": "CUSTOM:GoldenMace"
+      },
+      {
+        "value": "CUSTOM:GoldenHammer"
+      },
+      {
+        "value": "Items.GOLDEN_SWORD"
+      },
+      {
+        "value": "Items.GOLDEN_SHOVEL"
+      },
+      {
+        "value": "Items.GOLDEN_PICKAXE"
+      },
+      {
+        "value": "Items.GOLDEN_AXE"
+      },
+      {
+        "value": "Items.GOLDEN_HOE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "golden_tools",
+    "namespace": "minecraft"
+  }
+}

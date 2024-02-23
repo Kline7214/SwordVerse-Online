@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "swordverse_online:wooden_battle_axe",
+    "swordverse_online:wooden_spear",
+    "swordverse_online:wooden_dagger",
+    "swordverse_online:wooden_rapier",
+    "swordverse_online:wooden_mace",
+    "swordverse_online:wooden_hammer",
+    "minecraft:wooden_sword",
+    "minecraft:wooden_shovel",
+    "minecraft:wooden_pickaxe",
+    "minecraft:wooden_axe",
+    "minecraft:wooden_hoe"
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 1000,
+    "inventoryOffsetY": 1000,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "profilebg.png",
+          "use1Xscale": false,
+          "x": 67,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stg",
+          "text": {
+            "fixedValue": "STG:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 70,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spd",
+          "text": {
+            "fixedValue": "SPD:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 70,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mp",
+          "text": {
+            "fixedValue": "MP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 71,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp",
+          "text": {
+            "fixedValue": "HP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 71,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderPlayerInStatScreen"
+          },
+          "scale": 40,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 117,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_player_name",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderPlayerName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 89,
+          "y": 17
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 89,
+          "y": 36
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 152,
+          "y": 36
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 165,
+          "y": 79
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 152,
+          "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 88,
+          "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 77,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lv",
+          "text": {
+            "fixedValue": "Lv:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 71,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_exp",
+          "text": {
+            "fixedValue": "EXP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 70,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderHP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 195
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_mp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderMP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_stg",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSTG"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_spd",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSPD"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_exp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderEXP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_lv",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderLv"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 146
+        }
+      }
+    ],
+    "onTick": {
+      "name": "StatScreenWhileThisGUIIsOpenTick"
+    },
+    "onClosed": {
+      "name": "StatScreenThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

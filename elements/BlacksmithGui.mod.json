@@ -1,0 +1,130 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 1,
+    "height": 1,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_gui_button",
+          "image": "gui_button.png",
+          "hoveredImage": "gui_button_hov.png",
+          "onClick": {
+            "name": "OpenCrafting"
+          },
+          "x": 171,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weapon_crafting",
+          "text": {
+            "fixedValue": "Crafting"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 190,
+          "y": 91
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_blacksmith",
+          "text": {
+            "fixedValue": "Blacksmith"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_blank.png",
+          "use1Xscale": false,
+          "x": 85,
+          "y": 49
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_gui_button1",
+          "image": "gui_button.png",
+          "hoveredImage": "gui_button_hov.png",
+          "onClick": {
+            "name": "OpenAppraisal"
+          },
+          "x": 171,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_appraisal",
+          "text": {
+            "fixedValue": "Appraisal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 189,
+          "y": 117
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_gui_button2",
+          "image": "gui_button.png",
+          "hoveredImage": "gui_button.png",
+          "onClick": {
+            "name": "OpenUpgrade"
+          },
+          "x": 171,
+          "y": 141
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_upgrade",
+          "text": {
+            "fixedValue": "Upgrade"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 194,
+          "y": 144
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
