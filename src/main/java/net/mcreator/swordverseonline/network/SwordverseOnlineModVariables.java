@@ -31,6 +31,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.swordverseonline.SwordverseOnlineMod;
 
 import java.util.function.Supplier;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SwordverseOnlineModVariables {
@@ -48,20 +49,29 @@ public class SwordverseOnlineModVariables {
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level.isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level.isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level.isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
@@ -78,7 +88,13 @@ public class SwordverseOnlineModVariables {
 			clone.Level = original.Level;
 			clone.maxExperience = original.maxExperience;
 			clone.statKeybind = original.statKeybind;
+			clone.maxHealthPoints = original.maxHealthPoints;
 			if (!event.isWasDeath()) {
+			}
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
 			}
 		}
 	}
@@ -123,10 +139,11 @@ public class SwordverseOnlineModVariables {
 		public double Level = 1.0;
 		public double maxExperience = 25.0;
 		public boolean statKeybind = false;
+		public double maxHealthPoints = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				SwordverseOnlineMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				SwordverseOnlineMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(entity.level::dimension), new PlayerVariablesSyncMessage(this, entity.getId()));
 		}
 
 		public Tag writeNBT() {
@@ -140,6 +157,7 @@ public class SwordverseOnlineModVariables {
 			nbt.putDouble("Level", Level);
 			nbt.putDouble("maxExperience", maxExperience);
 			nbt.putBoolean("statKeybind", statKeybind);
+			nbt.putDouble("maxHealthPoints", maxHealthPoints);
 			return nbt;
 		}
 
@@ -154,30 +172,40 @@ public class SwordverseOnlineModVariables {
 			Level = nbt.getDouble("Level");
 			maxExperience = nbt.getDouble("maxExperience");
 			statKeybind = nbt.getBoolean("statKeybind");
+			maxHealthPoints = nbt.getDouble("maxHealthPoints");
 		}
 	}
 
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		SwordverseOnlineMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+	}
+
 	public static class PlayerVariablesSyncMessage {
+		private final int target;
 		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();
 			this.data.readNBT(buffer.readNbt());
+			this.target = buffer.readInt();
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
+		public PlayerVariablesSyncMessage(PlayerVariables data, int entityid) {
 			this.data = data;
+			this.target = entityid;
 		}
 
 		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
 			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+			buffer.writeInt(message.target);
 		}
 
 		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level.getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Strength = message.data.Strength;
 					variables.Speed = message.data.Speed;
 					variables.healthPoints = message.data.healthPoints;
@@ -187,6 +215,7 @@ public class SwordverseOnlineModVariables {
 					variables.Level = message.data.Level;
 					variables.maxExperience = message.data.maxExperience;
 					variables.statKeybind = message.data.statKeybind;
+					variables.maxHealthPoints = message.data.maxHealthPoints;
 				}
 			});
 			context.setPacketHandled(true);

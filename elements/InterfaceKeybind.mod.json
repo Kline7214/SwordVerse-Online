@@ -2,11 +2,11 @@
   "_fv": 57,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "P",
-    "keyBindingName": "Stat Screen Keybind",
+    "triggerKey": "E",
+    "keyBindingName": "SAO Interface",
     "keyBindingCategoryKey": "swordverse_online",
     "onKeyPressed": {
-      "name": "StatScreenKeybindOnKeyPressed"
+      "name": "InterfaceKeybindOnKeyPressed"
     }
   }
 }

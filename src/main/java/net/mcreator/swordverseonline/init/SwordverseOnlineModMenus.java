@@ -12,7 +12,8 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.swordverseonline.world.inventory.UpgradeMenu;
-import net.mcreator.swordverseonline.world.inventory.StatScreenMenu;
+import net.mcreator.swordverseonline.world.inventory.SAOinterfaceMenu;
+import net.mcreator.swordverseonline.world.inventory.ProfileMenu;
 import net.mcreator.swordverseonline.world.inventory.CraftingMenu;
 import net.mcreator.swordverseonline.world.inventory.BlacksmithGuiMenu;
 import net.mcreator.swordverseonline.world.inventory.AppraisalMenu;
@@ -24,5 +25,6 @@ public class SwordverseOnlineModMenus {
 	public static final RegistryObject<MenuType<AppraisalMenu>> APPRAISAL = REGISTRY.register("appraisal", () -> IForgeMenuType.create(AppraisalMenu::new));
 	public static final RegistryObject<MenuType<CraftingMenu>> CRAFTING = REGISTRY.register("crafting", () -> IForgeMenuType.create(CraftingMenu::new));
 	public static final RegistryObject<MenuType<UpgradeMenu>> UPGRADE = REGISTRY.register("upgrade", () -> IForgeMenuType.create(UpgradeMenu::new));
-	public static final RegistryObject<MenuType<StatScreenMenu>> STAT_SCREEN = REGISTRY.register("stat_screen", () -> IForgeMenuType.create(StatScreenMenu::new));
+	public static final RegistryObject<MenuType<SAOinterfaceMenu>> SA_OINTERFACE = REGISTRY.register("sa_ointerface", () -> IForgeMenuType.create(SAOinterfaceMenu::new));
+	public static final RegistryObject<MenuType<ProfileMenu>> PROFILE = REGISTRY.register("profile", () -> IForgeMenuType.create(ProfileMenu::new));
 }

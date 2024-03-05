@@ -10,31 +10,31 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.swordverseonline.procedures.StatScreenKeybindOnKeyPressedProcedure;
+import net.mcreator.swordverseonline.procedures.InterfaceKeybindOnKeyPressedProcedure;
 import net.mcreator.swordverseonline.SwordverseOnlineMod;
 
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class StatScreenKeybindMessage {
+public class InterfaceKeybindMessage {
 	int type, pressedms;
 
-	public StatScreenKeybindMessage(int type, int pressedms) {
+	public InterfaceKeybindMessage(int type, int pressedms) {
 		this.type = type;
 		this.pressedms = pressedms;
 	}
 
-	public StatScreenKeybindMessage(FriendlyByteBuf buffer) {
+	public InterfaceKeybindMessage(FriendlyByteBuf buffer) {
 		this.type = buffer.readInt();
 		this.pressedms = buffer.readInt();
 	}
 
-	public static void buffer(StatScreenKeybindMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(InterfaceKeybindMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.type);
 		buffer.writeInt(message.pressedms);
 	}
 
-	public static void handler(StatScreenKeybindMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(InterfaceKeybindMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			pressAction(context.getSender(), message.type, message.pressedms);
@@ -52,12 +52,12 @@ public class StatScreenKeybindMessage {
 			return;
 		if (type == 0) {
 
-			StatScreenKeybindOnKeyPressedProcedure.execute(world, x, y, z, entity);
+			InterfaceKeybindOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		SwordverseOnlineMod.addNetworkMessage(StatScreenKeybindMessage.class, StatScreenKeybindMessage::buffer, StatScreenKeybindMessage::new, StatScreenKeybindMessage::handler);
+		SwordverseOnlineMod.addNetworkMessage(InterfaceKeybindMessage.class, InterfaceKeybindMessage::buffer, InterfaceKeybindMessage::new, InterfaceKeybindMessage::handler);
 	}
 }

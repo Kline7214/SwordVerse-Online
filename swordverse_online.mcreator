@@ -1926,21 +1926,6 @@
       "path": "~/Stats/Level"
     },
     {
-      "name": "StatScreen",
-      "type": "gui",
-      "sortid": 131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stat_screen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/swordverseonline/world/inventory/StatScreenMenu.java",
-          "src/main/java/net/mcreator/swordverseonline/client/gui/StatScreenScreen.java"
-        ]
-      },
-      "path": "~/Stats/GUI"
-    },
-    {
       "name": "RenderPlayerInStatScreen",
       "type": "procedure",
       "sortid": 132,
@@ -1975,7 +1960,7 @@
           }
         ]
       },
-      "path": "~/Stats/GUI"
+      "path": "~/GUI"
     },
     {
       "name": "RenderPlayerName",
@@ -2012,7 +1997,7 @@
           }
         ]
       },
-      "path": "~/Stats/GUI"
+      "path": "~/GUI"
     },
     {
       "name": "RenderHP",
@@ -2141,56 +2126,6 @@
       "path": "~/Stats/Level"
     },
     {
-      "name": "StatScreenKeybind",
-      "type": "keybind",
-      "sortid": 143,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stat_screen_keybind",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/swordverseonline/network/StatScreenKeybindMessage.java"
-        ]
-      },
-      "path": "~/Stats/GUI"
-    },
-    {
-      "name": "StatScreenKeybindOnKeyPressed",
-      "type": "procedure",
-      "sortid": 146,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stat_screen_keybind_on_key_pressed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenKeybindOnKeyPressedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Stats/GUI"
-    },
-    {
       "name": "AddHP",
       "type": "procedure",
       "sortid": 147,
@@ -2269,46 +2204,6 @@
         ]
       },
       "path": "~/Stats/Level"
-    },
-    {
-      "name": "StatScreenWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 151,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stat_screen_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Stats/GUI"
-    },
-    {
-      "name": "StatScreenThisGUIIsClosed",
-      "type": "procedure",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stat_screen_this_gui_is_closed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/swordverseonline/procedures/StatScreenThisGUIIsClosedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Stats/GUI"
     },
     {
       "name": "ReturnFalse",
@@ -2525,6 +2420,106 @@
         ]
       },
       "path": "~/Stats/Strength"
+    },
+    {
+      "name": "PlayerMaxHP",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_max_hp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/PlayerMaxHPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats/Health"
+    },
+    {
+      "name": "InterfaceKeybind",
+      "type": "keybind",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interface_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/network/InterfaceKeybindMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "InterfaceKeybindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "interface_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/procedures/InterfaceKeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "SAOinterface",
+      "type": "gui",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_ointerface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/SAOinterfaceScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/SAOinterfaceMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "Profile",
+      "type": "gui",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "profile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/ProfileMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/ProfileScreen.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -2581,41 +2576,48 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "maxHealthPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.swordverse_online.iron_spear": "Iron Spear",
-      "item.swordverse_online.bronze_lance": "Bronze Lance",
       "item.swordverse_online.netherite_spear": "Netherite Spear",
+      "item.swordverse_online.bronze_lance": "Bronze Lance",
       "item.swordverse_online.golden_spear": "Golden Spear",
-      "gui.swordverse_online.stat_screen.label_exp": "EXP:",
+      "gui.swordverse_online.sa_ointerface.label_mp": "MP:",
       "item.swordverse_online.bronze_boots": "Bronze Boots",
       "item.swordverse_online.stone_hammer": "Stone Hammer",
-      "gui.swordverse_online.stat_screen.label_stg": "STG:",
-      "gui.swordverse_online.stat_screen.label_spd": "SPD:",
       "item.swordverse_online.bronze_leggings": "Bronze Leggings",
       "item.swordverse_online.curing_crystal": "Curing Crystal",
       "block.swordverse_online.bronze_block": "Block Of Bronze",
       "item.swordverse_online.blacksmith_spawn_egg": "Blacksmith Spawn Egg",
       "item.swordverse_online.diamond_dagger": "Diamond Dagger",
       "item.swordverse_online.pointed_stinger": "Pointed Stinger",
-      "gui.swordverse_online.stat_screen.label_mp": "MP:",
       "item.swordverse_online.stone_spear": "Stone Spear",
       "gui.swordverse_online.blacksmith_gui.label_weapon_crafting": "Crafting",
       "gui.swordverse_online.appraisal.label_grade": "Grade:",
       "item.swordverse_online.stone_mace": "Stone Mace",
       "item.swordverse_online.diamond_mace": "Diamond Mace",
+      "gui.swordverse_online.profile.label_mp": "MP:",
+      "key.swordverse_online.interface_keybind": "SAO Interface",
       "item.swordverse_online.stone_battle_axe": "Stone Battle Axe",
       "gui.swordverse_online.appraisal.label_weight": "Weight:",
       "item.swordverse_online.diamond_spear": "Diamond Spear",
       "item.swordverse_online.iron_hammer": "Iron Hammer",
       "item.swordverse_online.bronze_ingot": "Bronze Ingot",
+      "gui.swordverse_online.profile.label_lv": "Lv:",
       "item.swordverse_online.wooden_hammer": "Wooden Hammer",
       "item.swordverse_online.netherite_battle_axe": "Netherite Battle Axe",
       "item.swordverse_online.diamond_rapier": "Diamond Rapier",
       "item.swordverse_online.golden_mace": "Golden Mace",
+      "gui.swordverse_online.profile.label_skills": "Skills",
       "gui.swordverse_online.appraisal.label_rarity": "Rarity:",
       "item.swordverse_online.stone_dagger": "Stone Dagger",
       "item.swordverse_online.netherite_mace": "Netherite Mace",
@@ -2626,30 +2628,37 @@
       "item.swordverse_online.bronze_dagger": "Bronze Dagger",
       "item.swordverse_online.bronze_battle_axe": "Bronze Battle Axe",
       "item.swordverse_online.upgrade_mod_sss": "Upgrade Mod SSS",
+      "gui.swordverse_online.profile.label_exp": "EXP:",
       "item.swordverse_online.stone_rapier": "Stone Rapier",
       "item.swordverse_online.wooden_rapier": "Wooden Rapier",
       "item.swordverse_online.wooden_battle_axe": "Wooden Battle Axe",
       "item.swordverse_online.diamond_shard": "Diamond Shard",
       "entity.swordverse_online.blacksmith": "Blacksmith",
       "item.swordverse_online.boar_hide": "Boar Hide",
+      "gui.swordverse_online.profile.label_hp": "HP:",
+      "gui.swordverse_online.profile.label_stg": "STG:",
       "item.swordverse_online.diamond_battle_axe": "Diamond Battle Axe",
       "item.swordverse_online.upgrade_mod_s": "Upgrade Mod S",
+      "gui.swordverse_online.profile.label_spd": "SPD:",
       "item.swordverse_online.golden_rapier": "Golden Rapier",
       "item.swordverse_online.wooden_spear": "Wooden Spear",
       "item.swordverse_online.iron_dagger": "Iron Dagger",
+      "gui.swordverse_online.sa_ointerface.label_spd": "SPD:",
       "gui.swordverse_online.blacksmith_gui.label_blacksmith": "Blacksmith",
       "item.swordverse_online.wooden_dagger": "Wooden Dagger",
+      "gui.swordverse_online.sa_ointerface.label_stg": "STG:",
       "item.swordverse_online.iron_mace": "Iron Mace",
       "gui.swordverse_online.appraisal.label_damage": "Attack:",
       "gui.swordverse_online.appraisal.label_type": "Type:",
       "item.swordverse_online.upgrade_mod_c": "Upgrade Mod C",
+      "gui.swordverse_online.sa_ointerface.label_lv": "Lv:",
       "item.swordverse_online.iron_battle_axe": "Iron Battle Axe",
       "item.swordverse_online.bronze_nugget": "Bronze Nugget",
-      "gui.swordverse_online.stat_screen.label_lv": "Lv:",
+      "gui.swordverse_online.sa_ointerface.label_hp": "HP:",
+      "gui.swordverse_online.sa_ointerface.label_exp": "EXP:",
       "item.swordverse_online.teleport_crystal": "Teleport Crystal",
       "item.swordverse_online.bronze_rapier": "Bronze Rapier",
       "item.swordverse_online.upgrade_mod_b": "Upgrade Mod B",
-      "gui.swordverse_online.stat_screen.label_hp": "HP:",
       "gui.swordverse_online.crafting.label_crafting": "Crafting",
       "item.swordverse_online.upgrade_mod_a": "Upgrade Mod A",
       "item.swordverse_online.diamond_hammer": "Diamond Hammer",
@@ -2663,11 +2672,12 @@
       "item.swordverse_online.wooden_mace": "Wooden Mace",
       "item.swordverse_online.bronze_sword": "Bronze Sword",
       "item.swordverse_online.golden_battle_axe": "Golden Battle Axe",
+      "gui.swordverse_online.profile.label_equiptment": "Equiptment",
+      "gui.swordverse_online.profile.label_items": "Items",
       "item.swordverse_online.upgrade_mod_sss_plus": "Upgrade Mod SSS+",
       "item.swordverse_online.bronze_chestplate": "Bronze Chestplate",
       "item.swordverse_online.healing_crystal": "Healing Crystal",
       "gui.swordverse_online.appraisal.label_appraisal": "Appraisal",
-      "key.swordverse_online.stat_screen_keybind": "Stat Screen Keybind",
       "item.swordverse_online.golden_hammer": "Golden Hammer",
       "item.swordverse_online.upgrade_mod_ss": "Upgrade Mod SS",
       "item.swordverse_online.netherite_dagger": "Netherite Dagger"
@@ -2803,10 +2813,6 @@
             "children": []
           },
           {
-            "name": "GUI",
-            "children": []
-          },
-          {
             "name": "Level",
             "children": []
           }
@@ -2824,6 +2830,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "GUI",
+        "children": []
       }
     ]
   },
