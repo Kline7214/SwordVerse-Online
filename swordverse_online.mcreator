@@ -24,8 +24,8 @@
       "registry_name": "healing_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/healing_crystal.json",
-          "src/main/java/net/mcreator/swordverseonline/item/HealingCrystalItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/HealingCrystalItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/healing_crystal.json"
         ]
       },
       "path": "~/Crystals"
@@ -344,9 +344,9 @@
       "registry_name": "blacksmith",
       "metadata": {
         "files": [
+          "src/main/resources/data/swordverse_online/forge/biome_modifier/blacksmith_biome_modifier.json",
           "src/main/java/net/mcreator/swordverseonline/entity/BlacksmithEntity.java",
           "src/main/java/net/mcreator/swordverseonline/client/renderer/BlacksmithRenderer.java",
-          "src/main/resources/data/swordverse_online/forge/biome_modifier/blacksmith_biome_modifier.json",
           "src/main/resources/assets/swordverse_online/models/item/blacksmith_spawn_egg.json"
         ]
       },
@@ -543,8 +543,8 @@
       "registry_name": "bronze_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/bronze_ingot.json",
-          "src/main/java/net/mcreator/swordverseonline/item/BronzeIngotItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeIngotItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_ingot.json"
         ]
       },
       "path": "~/Floor 1-10/Weapon n armor/Bronze"
@@ -587,9 +587,9 @@
       "registry_name": "bronze",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/BronzeItem.java",
           "src/main/resources/assets/swordverse_online/models/item/bronze_chestplate.json",
           "src/main/resources/assets/swordverse_online/models/item/bronze_boots.json",
+          "src/main/java/net/mcreator/swordverseonline/item/BronzeItem.java",
           "src/main/resources/assets/swordverse_online/models/item/bronze_leggings.json"
         ]
       },
@@ -664,8 +664,8 @@
       "registry_name": "iron_battle_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/IronBattleAxeItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/iron_battle_axe.json"
+          "src/main/resources/assets/swordverse_online/models/item/iron_battle_axe.json",
+          "src/main/java/net/mcreator/swordverseonline/item/IronBattleAxeItem.java"
         ]
       },
       "path": "~/Misc/Iron"
@@ -679,8 +679,8 @@
       "registry_name": "iron_spear",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/IronSpearItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/iron_spear.json"
+          "src/main/resources/assets/swordverse_online/models/item/iron_spear.json",
+          "src/main/java/net/mcreator/swordverseonline/item/IronSpearItem.java"
         ]
       },
       "path": "~/Misc/Iron"
@@ -694,8 +694,8 @@
       "registry_name": "iron_rapier",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/iron_rapier.json",
-          "src/main/java/net/mcreator/swordverseonline/item/IronRapierItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/IronRapierItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/iron_rapier.json"
         ]
       },
       "path": "~/Misc/Iron"
@@ -709,8 +709,8 @@
       "registry_name": "iron_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/IronDaggerItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/iron_dagger.json"
+          "src/main/resources/assets/swordverse_online/models/item/iron_dagger.json",
+          "src/main/java/net/mcreator/swordverseonline/item/IronDaggerItem.java"
         ]
       },
       "path": "~/Misc/Iron"
@@ -754,8 +754,8 @@
       "registry_name": "netherite_rapier",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/NetheriteRapierItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/netherite_rapier.json"
+          "src/main/resources/assets/swordverse_online/models/item/netherite_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteRapierItem.java"
         ]
       },
       "path": "~/Misc/Netherite"
@@ -769,8 +769,8 @@
       "registry_name": "netherite_spear",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/netherite_spear.json",
-          "src/main/java/net/mcreator/swordverseonline/item/NetheriteSpearItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteSpearItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/netherite_spear.json"
         ]
       },
       "path": "~/Misc/Netherite"
@@ -799,8 +799,8 @@
       "registry_name": "stone_battle_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/StoneBattleAxeItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/stone_battle_axe.json"
+          "src/main/resources/assets/swordverse_online/models/item/stone_battle_axe.json",
+          "src/main/java/net/mcreator/swordverseonline/item/StoneBattleAxeItem.java"
         ]
       },
       "path": "~/Misc/Stone"
@@ -814,8 +814,8 @@
       "registry_name": "wooden_battle_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/WoodenBattleAxeItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/wooden_battle_axe.json"
+          "src/main/resources/assets/swordverse_online/models/item/wooden_battle_axe.json",
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenBattleAxeItem.java"
         ]
       },
       "path": "~/Misc/Wooden"
@@ -844,8 +844,8 @@
       "registry_name": "diamond_spear",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/DiamondSpearItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/diamond_spear.json"
+          "src/main/resources/assets/swordverse_online/models/item/diamond_spear.json",
+          "src/main/java/net/mcreator/swordverseonline/item/DiamondSpearItem.java"
         ]
       },
       "path": "~/Misc/Diamond"
@@ -874,8 +874,8 @@
       "registry_name": "wooden_spear",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/WoodenSpearItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/wooden_spear.json"
+          "src/main/resources/assets/swordverse_online/models/item/wooden_spear.json",
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenSpearItem.java"
         ]
       },
       "path": "~/Misc/Wooden"
@@ -889,8 +889,8 @@
       "registry_name": "golden_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/GoldenDaggerItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/golden_dagger.json"
+          "src/main/resources/assets/swordverse_online/models/item/golden_dagger.json",
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenDaggerItem.java"
         ]
       },
       "path": "~/Misc/Gold"
@@ -919,8 +919,8 @@
       "registry_name": "stone_dagger",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/StoneDaggerItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/stone_dagger.json"
+          "src/main/resources/assets/swordverse_online/models/item/stone_dagger.json",
+          "src/main/java/net/mcreator/swordverseonline/item/StoneDaggerItem.java"
         ]
       },
       "path": "~/Misc/Stone"
@@ -1009,8 +1009,8 @@
       "registry_name": "wooden_rapier",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/WoodenRapierItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/wooden_rapier.json"
+          "src/main/resources/assets/swordverse_online/models/item/wooden_rapier.json",
+          "src/main/java/net/mcreator/swordverseonline/item/WoodenRapierItem.java"
         ]
       },
       "path": "~/Misc/Wooden"
@@ -1245,8 +1245,8 @@
       "registry_name": "golden_mace",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/golden_mace.json",
-          "src/main/java/net/mcreator/swordverseonline/item/GoldenMaceItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/GoldenMaceItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/golden_mace.json"
         ]
       },
       "path": "~/Misc/Gold"
@@ -1260,8 +1260,8 @@
       "registry_name": "iron_mace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/IronMaceItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/iron_mace.json"
+          "src/main/resources/assets/swordverse_online/models/item/iron_mace.json",
+          "src/main/java/net/mcreator/swordverseonline/item/IronMaceItem.java"
         ]
       },
       "path": "~/Misc/Iron"
@@ -1438,8 +1438,8 @@
       "registry_name": "upgrade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/client/gui/UpgradeScreen.java",
-          "src/main/java/net/mcreator/swordverseonline/world/inventory/UpgradeMenu.java"
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/UpgradeMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/UpgradeScreen.java"
         ]
       },
       "path": "~/Blacksmith/Upgrade"
@@ -1618,8 +1618,8 @@
       "registry_name": "netherite_hammer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/NetheriteHammerItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/netherite_hammer.json"
+          "src/main/resources/assets/swordverse_online/models/item/netherite_hammer.json",
+          "src/main/java/net/mcreator/swordverseonline/item/NetheriteHammerItem.java"
         ]
       },
       "path": "~/Misc/Netherite"
@@ -1698,8 +1698,8 @@
       "registry_name": "boar_hide",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/swordverseonline/item/BoarHideItem.java",
-          "src/main/resources/assets/swordverse_online/models/item/boar_hide.json"
+          "src/main/resources/assets/swordverse_online/models/item/boar_hide.json",
+          "src/main/java/net/mcreator/swordverseonline/item/BoarHideItem.java"
         ]
       },
       "path": "~/Floor 1-10/Items"
@@ -1713,8 +1713,8 @@
       "registry_name": "pointed_stinger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/models/item/pointed_stinger.json",
-          "src/main/java/net/mcreator/swordverseonline/item/PointedStingerItem.java"
+          "src/main/java/net/mcreator/swordverseonline/item/PointedStingerItem.java",
+          "src/main/resources/assets/swordverse_online/models/item/pointed_stinger.json"
         ]
       },
       "path": "~/Floor 1-10/Items"
@@ -1779,10 +1779,10 @@
       "registry_name": "bronze_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/swordverse_online/blockstates/bronze_block.json",
-          "src/main/resources/assets/swordverse_online/models/item/bronze_block.json",
           "src/main/resources/assets/swordverse_online/models/block/bronze_block.json",
-          "src/main/java/net/mcreator/swordverseonline/block/BronzeBlockBlock.java"
+          "src/main/resources/assets/swordverse_online/blockstates/bronze_block.json",
+          "src/main/java/net/mcreator/swordverseonline/block/BronzeBlockBlock.java",
+          "src/main/resources/assets/swordverse_online/models/item/bronze_block.json"
         ]
       },
       "path": "~/Floor 1-10/Weapon n armor/Bronze"
@@ -2519,7 +2519,67 @@
           "src/main/java/net/mcreator/swordverseonline/client/gui/ProfileScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Profile Sub"
+    },
+    {
+      "name": "Social",
+      "type": "gui",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "social",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/SocialMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/SocialScreen.java"
+        ]
+      },
+      "path": "~/GUI/Social Sub"
+    },
+    {
+      "name": "Message",
+      "type": "gui",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/MessageScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/MessageMenu.java"
+        ]
+      },
+      "path": "~/GUI/Message Sub"
+    },
+    {
+      "name": "Navigation",
+      "type": "gui",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "navigation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/client/gui/NavigationScreen.java",
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/NavigationMenu.java"
+        ]
+      },
+      "path": "~/GUI/Navigation Sub"
+    },
+    {
+      "name": "Settings",
+      "type": "gui",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/swordverseonline/world/inventory/SettingsMenu.java",
+          "src/main/java/net/mcreator/swordverseonline/client/gui/SettingsScreen.java"
+        ]
+      },
+      "path": "~/GUI/Settings Sub"
     }
   ],
   "variable_elements": [
@@ -2590,45 +2650,41 @@
       "item.swordverse_online.iron_spear": "Iron Spear",
       "item.swordverse_online.netherite_spear": "Netherite Spear",
       "item.swordverse_online.bronze_lance": "Bronze Lance",
+      "gui.swordverse_online.message.label_guild": "Guild",
       "item.swordverse_online.golden_spear": "Golden Spear",
-      "gui.swordverse_online.sa_ointerface.label_mp": "MP:",
-      "item.swordverse_online.bronze_boots": "Bronze Boots",
-      "item.swordverse_online.stone_hammer": "Stone Hammer",
+      "gui.swordverse_online.settings.label_mp": "MP:",
+      "gui.swordverse_online.social.label_mp": "MP:",
       "item.swordverse_online.bronze_leggings": "Bronze Leggings",
-      "item.swordverse_online.curing_crystal": "Curing Crystal",
-      "block.swordverse_online.bronze_block": "Block Of Bronze",
-      "item.swordverse_online.blacksmith_spawn_egg": "Blacksmith Spawn Egg",
-      "item.swordverse_online.diamond_dagger": "Diamond Dagger",
+      "gui.swordverse_online.message.label_stg": "STG:",
+      "gui.swordverse_online.message.label_hp": "HP:",
+      "gui.swordverse_online.message.label_exp": "EXP:",
       "item.swordverse_online.pointed_stinger": "Pointed Stinger",
+      "gui.swordverse_online.navigation.label_mp": "MP:",
       "item.swordverse_online.stone_spear": "Stone Spear",
       "gui.swordverse_online.blacksmith_gui.label_weapon_crafting": "Crafting",
       "gui.swordverse_online.appraisal.label_grade": "Grade:",
-      "item.swordverse_online.stone_mace": "Stone Mace",
+      "gui.swordverse_online.social.label_lv": "Lv:",
+      "gui.swordverse_online.settings.label_lv": "Lv:",
       "item.swordverse_online.diamond_mace": "Diamond Mace",
-      "gui.swordverse_online.profile.label_mp": "MP:",
-      "key.swordverse_online.interface_keybind": "SAO Interface",
       "item.swordverse_online.stone_battle_axe": "Stone Battle Axe",
-      "gui.swordverse_online.appraisal.label_weight": "Weight:",
-      "item.swordverse_online.diamond_spear": "Diamond Spear",
+      "gui.swordverse_online.social.label_stg": "STG:",
+      "gui.swordverse_online.social.label_friends": "Friends",
       "item.swordverse_online.iron_hammer": "Iron Hammer",
-      "item.swordverse_online.bronze_ingot": "Bronze Ingot",
-      "gui.swordverse_online.profile.label_lv": "Lv:",
-      "item.swordverse_online.wooden_hammer": "Wooden Hammer",
-      "item.swordverse_online.netherite_battle_axe": "Netherite Battle Axe",
-      "item.swordverse_online.diamond_rapier": "Diamond Rapier",
+      "gui.swordverse_online.navigation.label_lv": "Lv:",
+      "gui.swordverse_online.message.label_friends": "Friends",
       "item.swordverse_online.golden_mace": "Golden Mace",
+      "item.swordverse_online.diamond_rapier": "Diamond Rapier",
+      "gui.swordverse_online.social.label_items": "Items",
+      "gui.swordverse_online.social.label_party": "Party",
       "gui.swordverse_online.profile.label_skills": "Skills",
-      "gui.swordverse_online.appraisal.label_rarity": "Rarity:",
-      "item.swordverse_online.stone_dagger": "Stone Dagger",
-      "item.swordverse_online.netherite_mace": "Netherite Mace",
       "item.swordverse_online.elucidator": "Elucidator",
-      "item.swordverse_online.wolf_claw": "Wolf Claw",
+      "item.swordverse_online.netherite_mace": "Netherite Mace",
+      "item.swordverse_online.stone_dagger": "Stone Dagger",
+      "gui.swordverse_online.navigation.label_guild": "Guild",
       "item.swordverse_online.bronze_mace": "Bronze Mace",
-      "item.swordverse_online.dark_repulser": "Dark Repulser",
-      "item.swordverse_online.bronze_dagger": "Bronze Dagger",
+      "gui.swordverse_online.navigation.label_exp": "EXP:",
       "item.swordverse_online.bronze_battle_axe": "Bronze Battle Axe",
       "item.swordverse_online.upgrade_mod_sss": "Upgrade Mod SSS",
-      "gui.swordverse_online.profile.label_exp": "EXP:",
       "item.swordverse_online.stone_rapier": "Stone Rapier",
       "item.swordverse_online.wooden_rapier": "Wooden Rapier",
       "item.swordverse_online.wooden_battle_axe": "Wooden Battle Axe",
@@ -2636,50 +2692,101 @@
       "entity.swordverse_online.blacksmith": "Blacksmith",
       "item.swordverse_online.boar_hide": "Boar Hide",
       "gui.swordverse_online.profile.label_hp": "HP:",
-      "gui.swordverse_online.profile.label_stg": "STG:",
       "item.swordverse_online.diamond_battle_axe": "Diamond Battle Axe",
-      "item.swordverse_online.upgrade_mod_s": "Upgrade Mod S",
       "gui.swordverse_online.profile.label_spd": "SPD:",
       "item.swordverse_online.golden_rapier": "Golden Rapier",
       "item.swordverse_online.wooden_spear": "Wooden Spear",
-      "item.swordverse_online.iron_dagger": "Iron Dagger",
       "gui.swordverse_online.sa_ointerface.label_spd": "SPD:",
       "gui.swordverse_online.blacksmith_gui.label_blacksmith": "Blacksmith",
+      "gui.swordverse_online.social.label_skills": "Skills",
+      "item.swordverse_online.iron_mace": "Iron Mace",
+      "item.swordverse_online.bronze_nugget": "Bronze Nugget",
+      "gui.swordverse_online.sa_ointerface.label_hp": "HP:",
+      "item.swordverse_online.bronze_rapier": "Bronze Rapier",
+      "gui.swordverse_online.crafting.label_crafting": "Crafting",
+      "gui.swordverse_online.settings.label_exp": "EXP:",
+      "item.swordverse_online.iron_rapier": "Iron Rapier",
+      "gui.swordverse_online.blacksmith_gui.label_upgrade": "Upgrade",
+      "item.swordverse_online.netherite_rapier": "Netherite Rapier",
+      "gui.swordverse_online.navigation.label_stg": "STG:",
+      "item.swordverse_online.bronze_sword": "Bronze Sword",
+      "gui.swordverse_online.settings.label_stg": "STG:",
+      "item.swordverse_online.golden_battle_axe": "Golden Battle Axe",
+      "gui.swordverse_online.profile.label_equiptment": "Equiptment",
+      "gui.swordverse_online.profile.label_items": "Items",
+      "item.swordverse_online.bronze_chestplate": "Bronze Chestplate",
+      "gui.swordverse_online.message.label_chat": "Chat",
+      "item.swordverse_online.upgrade_mod_ss": "Upgrade Mod SS",
+      "gui.swordverse_online.message.label_party": "Party",
+      "gui.swordverse_online.navigation.label_map": "Floor Map",
+      "gui.swordverse_online.sa_ointerface.label_mp": "MP:",
+      "item.swordverse_online.stone_hammer": "Stone Hammer",
+      "item.swordverse_online.bronze_boots": "Bronze Boots",
+      "gui.swordverse_online.message.label_mp": "MP:",
+      "item.swordverse_online.curing_crystal": "Curing Crystal",
+      "gui.swordverse_online.message.label_lv": "Lv:",
+      "gui.swordverse_online.message.label_spd": "SPD:",
+      "block.swordverse_online.bronze_block": "Block Of Bronze",
+      "gui.swordverse_online.navigation.label_friends": "Friends",
+      "item.swordverse_online.blacksmith_spawn_egg": "Blacksmith Spawn Egg",
+      "item.swordverse_online.diamond_dagger": "Diamond Dagger",
+      "gui.swordverse_online.settings.label_dungeon_map": "Dungeon Map",
+      "gui.swordverse_online.settings.label_help": "Help",
+      "gui.swordverse_online.social.label_hp": "HP:",
+      "item.swordverse_online.stone_mace": "Stone Mace",
+      "gui.swordverse_online.settings.label_hp": "HP:",
+      "gui.swordverse_online.profile.label_mp": "MP:",
+      "gui.swordverse_online.navigation.label_party": "Party",
+      "gui.swordverse_online.settings.label_map": "Floor Map",
+      "key.swordverse_online.interface_keybind": "SAO Interface",
+      "gui.swordverse_online.appraisal.label_weight": "Weight:",
+      "item.swordverse_online.diamond_spear": "Diamond Spear",
+      "gui.swordverse_online.social.label_spd": "SPD:",
+      "item.swordverse_online.bronze_ingot": "Bronze Ingot",
+      "gui.swordverse_online.profile.label_lv": "Lv:",
+      "item.swordverse_online.wooden_hammer": "Wooden Hammer",
+      "item.swordverse_online.netherite_battle_axe": "Netherite Battle Axe",
+      "gui.swordverse_online.navigation.label_hp": "HP:",
+      "gui.swordverse_online.appraisal.label_rarity": "Rarity:",
+      "gui.swordverse_online.navigation.label_quests": "Quests",
+      "item.swordverse_online.wolf_claw": "Wolf Claw",
+      "item.swordverse_online.dark_repulser": "Dark Repulser",
+      "item.swordverse_online.bronze_dagger": "Bronze Dagger",
+      "gui.swordverse_online.profile.label_exp": "EXP:",
+      "gui.swordverse_online.settings.label_quests": "Quests",
+      "gui.swordverse_online.social.label_guild": "Guild",
+      "gui.swordverse_online.profile.label_stg": "STG:",
+      "item.swordverse_online.upgrade_mod_s": "Upgrade Mod S",
+      "gui.swordverse_online.social.label_exp": "EXP:",
+      "item.swordverse_online.iron_dagger": "Iron Dagger",
       "item.swordverse_online.wooden_dagger": "Wooden Dagger",
       "gui.swordverse_online.sa_ointerface.label_stg": "STG:",
-      "item.swordverse_online.iron_mace": "Iron Mace",
+      "gui.swordverse_online.message.label_scoreboard": "Scoreboard",
       "gui.swordverse_online.appraisal.label_damage": "Attack:",
       "gui.swordverse_online.appraisal.label_type": "Type:",
       "item.swordverse_online.upgrade_mod_c": "Upgrade Mod C",
       "gui.swordverse_online.sa_ointerface.label_lv": "Lv:",
       "item.swordverse_online.iron_battle_axe": "Iron Battle Axe",
-      "item.swordverse_online.bronze_nugget": "Bronze Nugget",
-      "gui.swordverse_online.sa_ointerface.label_hp": "HP:",
       "gui.swordverse_online.sa_ointerface.label_exp": "EXP:",
       "item.swordverse_online.teleport_crystal": "Teleport Crystal",
-      "item.swordverse_online.bronze_rapier": "Bronze Rapier",
+      "gui.swordverse_online.navigation.label_dungeon_map": "Dungeon Map",
       "item.swordverse_online.upgrade_mod_b": "Upgrade Mod B",
-      "gui.swordverse_online.crafting.label_crafting": "Crafting",
       "item.swordverse_online.upgrade_mod_a": "Upgrade Mod A",
       "item.swordverse_online.diamond_hammer": "Diamond Hammer",
       "gui.swordverse_online.blacksmith_gui.label_appraisal": "Appraisal",
       "gui.swordverse_online.appraisal.label_durability": "Element:",
       "item.swordverse_online.netherite_hammer": "Netherite Hammer",
-      "item.swordverse_online.iron_rapier": "Iron Rapier",
-      "gui.swordverse_online.blacksmith_gui.label_upgrade": "Upgrade",
-      "item.swordverse_online.netherite_rapier": "Netherite Rapier",
       "item.swordverse_online.golden_dagger": "Golden Dagger",
       "item.swordverse_online.wooden_mace": "Wooden Mace",
-      "item.swordverse_online.bronze_sword": "Bronze Sword",
-      "item.swordverse_online.golden_battle_axe": "Golden Battle Axe",
-      "gui.swordverse_online.profile.label_equiptment": "Equiptment",
-      "gui.swordverse_online.profile.label_items": "Items",
+      "gui.swordverse_online.message.label_private_message": "Message",
+      "gui.swordverse_online.navigation.label_spd": "SPD:",
+      "gui.swordverse_online.settings.label_options": "Options",
       "item.swordverse_online.upgrade_mod_sss_plus": "Upgrade Mod SSS+",
-      "item.swordverse_online.bronze_chestplate": "Bronze Chestplate",
       "item.swordverse_online.healing_crystal": "Healing Crystal",
       "gui.swordverse_online.appraisal.label_appraisal": "Appraisal",
       "item.swordverse_online.golden_hammer": "Golden Hammer",
-      "item.swordverse_online.upgrade_mod_ss": "Upgrade Mod SS",
+      "gui.swordverse_online.settings.label_spd": "SPD:",
+      "gui.swordverse_online.social.label_equiptment": "Equiptment",
       "item.swordverse_online.netherite_dagger": "Netherite Dagger"
     }
   },
@@ -2833,7 +2940,28 @@
       },
       {
         "name": "GUI",
-        "children": []
+        "children": [
+          {
+            "name": "Profile Sub",
+            "children": []
+          },
+          {
+            "name": "Social Sub",
+            "children": []
+          },
+          {
+            "name": "Message Sub",
+            "children": []
+          },
+          {
+            "name": "Navigation Sub",
+            "children": []
+          },
+          {
+            "name": "Settings Sub",
+            "children": []
+          }
+        ]
       }
     ]
   },

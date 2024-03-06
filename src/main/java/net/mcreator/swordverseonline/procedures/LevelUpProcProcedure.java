@@ -8,6 +8,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.swordverseonline.network.SwordverseOnlineModVariables;
+import net.mcreator.swordverseonline.SwordverseOnlineMod;
 
 import javax.annotation.Nullable;
 
@@ -27,7 +28,7 @@ public class LevelUpProcProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).experience == (entity
+		if ((entity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).experience <= (entity
 				.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).maxExperience) {
 			{
 				double _setval = 0;
@@ -37,7 +38,7 @@ public class LevelUpProcProcedure {
 				});
 			}
 			{
-				double _setval = (entity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).maxExperience * 2;
+				double _setval = (entity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).maxExperience * 1.5;
 				entity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.maxExperience = _setval;
 					capability.syncPlayerVariables(entity);
@@ -57,6 +58,7 @@ public class LevelUpProcProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			SwordverseOnlineMod.LOGGER.info(entity.getDisplayName().getString() + "has levelel up");
 		}
 	}
 }

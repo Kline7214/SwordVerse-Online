@@ -46,7 +46,7 @@
             "falpha": 0.0
           },
           "x": 70,
-          "y": 175
+          "y": 176
         }
       },
       {
@@ -61,7 +61,7 @@
             "falpha": 0.0
           },
           "x": 70,
-          "y": 185
+          "y": 186
         }
       },
       {
@@ -76,7 +76,7 @@
             "falpha": 0.0
           },
           "x": 70,
-          "y": 195
+          "y": 196
         }
       },
       {
@@ -151,7 +151,7 @@
             "falpha": 0.0
           },
           "x": 158,
-          "y": 195
+          "y": 196
         }
       },
       {
@@ -167,7 +167,7 @@
             "falpha": 0.0
           },
           "x": 158,
-          "y": 185
+          "y": 186
         }
       },
       {
@@ -183,7 +183,7 @@
             "falpha": 0.0
           },
           "x": 158,
-          "y": 165
+          "y": 166
         }
       },
       {
@@ -199,7 +199,7 @@
             "falpha": 0.0
           },
           "x": 158,
-          "y": 175
+          "y": 176
         }
       },
       {
@@ -238,7 +238,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_profile",
-          "image": "profile.png",
+          "image": "profile_buttton.png",
           "hoveredImage": "profile_hov.png",
           "x": 203,
           "y": 54
@@ -248,7 +248,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_social",
-          "image": "social.png",
+          "image": "social_button.png",
           "hoveredImage": "social_hov.png",
           "x": 203,
           "y": 78
@@ -258,7 +258,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_message",
-          "image": "message.png",
+          "image": "message_button.png",
           "hoveredImage": "message_hov.png",
           "x": 203,
           "y": 102
@@ -268,7 +268,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_navigation",
-          "image": "navigation.png",
+          "image": "navigation_button.png",
           "hoveredImage": "navigation_hov.png",
           "x": 203,
           "y": 126
@@ -278,7 +278,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_settings",
-          "image": "settings.png",
+          "image": "settings_button.png",
           "hoveredImage": "settings_hov.png",
           "x": 203,
           "y": 150

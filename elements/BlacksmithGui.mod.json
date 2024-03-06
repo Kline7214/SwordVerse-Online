@@ -35,7 +35,7 @@
             "falpha": 0.0
           },
           "x": 190,
-          "y": 91
+          "y": 92
         }
       },
       {
@@ -87,7 +87,7 @@
             "falpha": 0.0
           },
           "x": 189,
-          "y": 117
+          "y": 118
         }
       },
       {
@@ -95,7 +95,7 @@
         "data": {
           "name": "imagebutton_gui_button2",
           "image": "gui_button.png",
-          "hoveredImage": "gui_button.png",
+          "hoveredImage": "gui_button_hov.png",
           "onClick": {
             "name": "OpenUpgrade"
           },
@@ -115,7 +115,7 @@
             "falpha": 0.0
           },
           "x": 194,
-          "y": 144
+          "y": 145
         }
       }
     ],

@@ -1,0 +1,371 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 1000,
+    "inventoryOffsetY": 1000,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "profilebg.png",
+          "use1Xscale": false,
+          "x": 53,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stg",
+          "text": {
+            "fixedValue": "STG:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spd",
+          "text": {
+            "fixedValue": "SPD:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mp",
+          "text": {
+            "fixedValue": "MP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp",
+          "text": {
+            "fixedValue": "HP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 196
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderPlayerInStatScreen"
+          },
+          "scale": 40,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 102,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_player_name",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderPlayerName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 74,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lv",
+          "text": {
+            "fixedValue": "Lv:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_exp",
+          "text": {
+            "fixedValue": "EXP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderHP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_mp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderMP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_stg",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSTG"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_spd",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSPD"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_exp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderEXP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_lv",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderLv"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 146
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_profile",
+          "image": "profile_buttton.png",
+          "hoveredImage": "profile_hov.png",
+          "x": 188,
+          "y": 54
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_social",
+          "image": "social_button.png",
+          "hoveredImage": "social_hov.png",
+          "x": 188,
+          "y": 78
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_message",
+          "image": "message_button.png",
+          "hoveredImage": "message_hov.png",
+          "x": 188,
+          "y": 102
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_navigation",
+          "image": "navigation_button.png",
+          "hoveredImage": "navigation_hov.png",
+          "x": 188,
+          "y": 126
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settings",
+          "image": "settings_button.png",
+          "hoveredImage": "settings_hov.png",
+          "x": 188,
+          "y": 150
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_party_button",
+          "image": "party_button.png",
+          "hoveredImage": "party_button_hov.png",
+          "x": 212,
+          "y": 61
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_friends_button",
+          "image": "friends_button.png",
+          "hoveredImage": "friends_button_hov.png",
+          "x": 212,
+          "y": 79
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_guild_button",
+          "image": "guild_button.png",
+          "hoveredImage": "guild_button_hov.png",
+          "x": 212,
+          "y": 97
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_party",
+          "text": {
+            "fixedValue": "Party"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 229,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_friends",
+          "text": {
+            "fixedValue": "Friends"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 229,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_guild",
+          "text": {
+            "fixedValue": "Guild"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 229,
+          "y": 102
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

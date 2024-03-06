@@ -12,8 +12,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.swordverseonline.client.gui.UpgradeScreen;
+import net.mcreator.swordverseonline.client.gui.SocialScreen;
+import net.mcreator.swordverseonline.client.gui.SettingsScreen;
 import net.mcreator.swordverseonline.client.gui.SAOinterfaceScreen;
 import net.mcreator.swordverseonline.client.gui.ProfileScreen;
+import net.mcreator.swordverseonline.client.gui.NavigationScreen;
+import net.mcreator.swordverseonline.client.gui.MessageScreen;
 import net.mcreator.swordverseonline.client.gui.CraftingScreen;
 import net.mcreator.swordverseonline.client.gui.BlacksmithGuiScreen;
 import net.mcreator.swordverseonline.client.gui.AppraisalScreen;
@@ -29,6 +33,10 @@ public class SwordverseOnlineModScreens {
 			MenuScreens.register(SwordverseOnlineModMenus.UPGRADE.get(), UpgradeScreen::new);
 			MenuScreens.register(SwordverseOnlineModMenus.SA_OINTERFACE.get(), SAOinterfaceScreen::new);
 			MenuScreens.register(SwordverseOnlineModMenus.PROFILE.get(), ProfileScreen::new);
+			MenuScreens.register(SwordverseOnlineModMenus.SOCIAL.get(), SocialScreen::new);
+			MenuScreens.register(SwordverseOnlineModMenus.MESSAGE.get(), MessageScreen::new);
+			MenuScreens.register(SwordverseOnlineModMenus.NAVIGATION.get(), NavigationScreen::new);
+			MenuScreens.register(SwordverseOnlineModMenus.SETTINGS.get(), SettingsScreen::new);
 		});
 	}
 }

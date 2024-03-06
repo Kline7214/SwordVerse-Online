@@ -238,7 +238,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_profile",
-          "image": "profile.png",
+          "image": "profile_buttton.png",
           "hoveredImage": "profile_hov.png",
           "x": 188,
           "y": 54
@@ -248,7 +248,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_social",
-          "image": "social.png",
+          "image": "social_button.png",
           "hoveredImage": "social_hov.png",
           "x": 188,
           "y": 78
@@ -258,7 +258,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_message",
-          "image": "message.png",
+          "image": "message_button.png",
           "hoveredImage": "message_hov.png",
           "x": 188,
           "y": 102
@@ -268,7 +268,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_navigation",
-          "image": "navigation.png",
+          "image": "navigation_button.png",
           "hoveredImage": "navigation_hov.png",
           "x": 188,
           "y": 126
@@ -278,7 +278,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_settings",
-          "image": "settings.png",
+          "image": "settings_button.png",
           "hoveredImage": "settings_hov.png",
           "x": 188,
           "y": 150

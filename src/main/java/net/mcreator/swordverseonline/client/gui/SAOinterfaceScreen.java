@@ -90,9 +90,9 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_stg"), -144, 46, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_spd"), -144, 55, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_mp"), -144, 65, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_hp"), -144, 75, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_spd"), -144, 56, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_mp"), -144, 66, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_hp"), -144, 76, -12829636);
 		this.font.draw(poseStack,
 
 				RenderPlayerNameProcedure.execute(world, x, y, z, entity), -125, -103, -12829636);
@@ -100,16 +100,16 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_exp"), -144, 36, -12829636);
 		this.font.draw(poseStack,
 
-				RenderHPProcedure.execute(entity), -56, 75, -12829636);
+				RenderHPProcedure.execute(entity), -56, 76, -12829636);
 		this.font.draw(poseStack,
 
-				RenderMPProcedure.execute(entity), -56, 65, -12829636);
+				RenderMPProcedure.execute(entity), -56, 66, -12829636);
 		this.font.draw(poseStack,
 
-				RenderSTGProcedure.execute(entity), -56, 45, -12829636);
+				RenderSTGProcedure.execute(entity), -56, 46, -12829636);
 		this.font.draw(poseStack,
 
-				RenderSPDProcedure.execute(entity), -56, 55, -12829636);
+				RenderSPDProcedure.execute(entity), -56, 56, -12829636);
 		this.font.draw(poseStack,
 
 				RenderEXPProcedure.execute(entity), -56, 36, -12829636);

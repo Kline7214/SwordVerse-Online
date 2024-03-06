@@ -76,10 +76,10 @@ public class BlacksmithGuiScreen extends AbstractContainerScreen<BlacksmithGuiMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_weapon_crafting"), -23, -29, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_weapon_crafting"), -23, -28, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_blacksmith"), -26, -64, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_appraisal"), -24, -3, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_upgrade"), -19, 24, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_appraisal"), -24, -2, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.blacksmith_gui.label_upgrade"), -19, 25, -12829636);
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class BlacksmithGuiScreen extends AbstractContainerScreen<BlacksmithGuiMe
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_gui_button = new ImageButton(this.leftPos + -42, this.topPos + -32, 82, 16, 0, 0, 16, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button.png"), 82, 32, e -> {
+		imagebutton_gui_button = new ImageButton(this.leftPos + -42, this.topPos + -32, 82, 18, 0, 0, 18, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button.png"), 82, 36, e -> {
 			if (true) {
 				SwordverseOnlineMod.PACKET_HANDLER.sendToServer(new BlacksmithGuiButtonMessage(0, x, y, z));
 				BlacksmithGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -98,7 +98,7 @@ public class BlacksmithGuiScreen extends AbstractContainerScreen<BlacksmithGuiMe
 		});
 		guistate.put("button:imagebutton_gui_button", imagebutton_gui_button);
 		this.addRenderableWidget(imagebutton_gui_button);
-		imagebutton_gui_button1 = new ImageButton(this.leftPos + -42, this.topPos + -6, 82, 16, 0, 0, 16, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button1.png"), 82, 32, e -> {
+		imagebutton_gui_button1 = new ImageButton(this.leftPos + -42, this.topPos + -6, 82, 18, 0, 0, 18, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button1.png"), 82, 36, e -> {
 			if (true) {
 				SwordverseOnlineMod.PACKET_HANDLER.sendToServer(new BlacksmithGuiButtonMessage(1, x, y, z));
 				BlacksmithGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -106,7 +106,7 @@ public class BlacksmithGuiScreen extends AbstractContainerScreen<BlacksmithGuiMe
 		});
 		guistate.put("button:imagebutton_gui_button1", imagebutton_gui_button1);
 		this.addRenderableWidget(imagebutton_gui_button1);
-		imagebutton_gui_button2 = new ImageButton(this.leftPos + -42, this.topPos + 21, 82, 16, 0, 0, 16, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button2.png"), 82, 32, e -> {
+		imagebutton_gui_button2 = new ImageButton(this.leftPos + -42, this.topPos + 21, 82, 18, 0, 0, 18, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_gui_button2.png"), 82, 36, e -> {
 			if (true) {
 				SwordverseOnlineMod.PACKET_HANDLER.sendToServer(new BlacksmithGuiButtonMessage(2, x, y, z));
 				BlacksmithGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
