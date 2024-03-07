@@ -24,7 +24,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class NavigationMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class InterfaceStatsMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -37,8 +37,8 @@ public class NavigationMenu extends AbstractContainerMenu implements Supplier<Ma
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public NavigationMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(SwordverseOnlineModMenus.NAVIGATION.get(), id);
+	public InterfaceStatsMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(SwordverseOnlineModMenus.INTERFACE_STATS.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

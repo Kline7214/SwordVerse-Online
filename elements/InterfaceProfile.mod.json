@@ -1,0 +1,340 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 1000,
+    "inventoryOffsetY": 1000,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_profile",
+          "image": "profile_buttton.png",
+          "hoveredImage": "profile_hov.png",
+          "x": 204,
+          "y": 67
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_social",
+          "image": "social_button.png",
+          "hoveredImage": "social_hov.png",
+          "x": 204,
+          "y": 91
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_message",
+          "image": "message_button.png",
+          "hoveredImage": "message_hov.png",
+          "x": 204,
+          "y": 115
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_navigation",
+          "image": "navigation_button.png",
+          "hoveredImage": "navigation_hov.png",
+          "x": 204,
+          "y": 139
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settings",
+          "image": "settings_button.png",
+          "hoveredImage": "settings_hov.png",
+          "x": 204,
+          "y": 163
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "profilebg.png",
+          "use1Xscale": false,
+          "x": 64,
+          "y": -3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lv",
+          "text": {
+            "fixedValue": "LV:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_lv",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderLv"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderHP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp",
+          "text": {
+            "fixedValue": "HP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 145
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_stg",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSTG"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_str",
+          "text": {
+            "fixedValue": "STR:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_spd",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSPD"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spd",
+          "text": {
+            "fixedValue": "SPD:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_mp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderMP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mp",
+          "text": {
+            "fixedValue": "MP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_player_name",
+          "text": {
+            "fixedValue": "re",
+            "name": "RenderPlayerName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 85,
+          "y": 3
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_equiptment_button",
+          "image": "equiptment_button.png",
+          "hoveredImage": "equiptment_button_hov.png",
+          "x": 230,
+          "y": 68
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_item_button",
+          "image": "item_button.png",
+          "hoveredImage": "item_button_hov.png",
+          "x": 230,
+          "y": 50
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skills_button",
+          "image": "skills_button.png",
+          "hoveredImage": "skills_button_hov.png",
+          "x": 230,
+          "y": 86
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_item",
+          "text": {
+            "fixedValue": "Items"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 248,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_equipment",
+          "text": {
+            "fixedValue": "Equipment"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 248,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skills",
+          "text": {
+            "fixedValue": "Skills"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 248,
+          "y": 91
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderPlayerInStatScreen"
+          },
+          "scale": 45,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 116,
+          "y": 90
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

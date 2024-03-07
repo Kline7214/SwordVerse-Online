@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.swordverseonline.init.SwordverseOnlineModSounds;
 import net.mcreator.swordverseonline.init.SwordverseOnlineModMenus;
 import net.mcreator.swordverseonline.init.SwordverseOnlineModItems;
 import net.mcreator.swordverseonline.init.SwordverseOnlineModEntities;
@@ -51,7 +52,7 @@ public class SwordverseOnlineMod {
 	public SwordverseOnlineMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		SwordverseOnlineModSounds.REGISTRY.register(bus);
 		SwordverseOnlineModBlocks.REGISTRY.register(bus);
 		SwordverseOnlineModItems.REGISTRY.register(bus);
 		SwordverseOnlineModEntities.REGISTRY.register(bus);

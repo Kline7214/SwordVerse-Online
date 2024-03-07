@@ -11,101 +11,62 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_profile",
+          "image": "profile_buttton.png",
+          "hoveredImage": "profile_hov.png",
+          "x": 204,
+          "y": 67
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_social",
+          "image": "social_button.png",
+          "hoveredImage": "social_hov.png",
+          "x": 204,
+          "y": 91
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_message",
+          "image": "message_button.png",
+          "hoveredImage": "message_hov.png",
+          "x": 204,
+          "y": 115
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_navigation",
+          "image": "navigation_button.png",
+          "hoveredImage": "navigation_hov.png",
+          "x": 204,
+          "y": 139
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settings",
+          "image": "settings_button.png",
+          "hoveredImage": "settings_hov.png",
+          "x": 204,
+          "y": 163
+        }
+      },
+      {
         "type": "image",
         "data": {
           "image": "profilebg.png",
           "use1Xscale": false,
-          "x": 53,
-          "y": 12
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_stg",
-          "text": {
-            "fixedValue": "STG:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 55,
-          "y": 166
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_spd",
-          "text": {
-            "fixedValue": "SPD:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 55,
-          "y": 176
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_mp",
-          "text": {
-            "fixedValue": "MP:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 55,
-          "y": 186
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_hp",
-          "text": {
-            "fixedValue": "HP:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 55,
-          "y": 196
-        }
-      },
-      {
-        "type": "entitymodel",
-        "data": {
-          "entityModel": {
-            "name": "RenderPlayerInStatScreen"
-          },
-          "scale": 40,
-          "rotationX": 0,
-          "followMouseMovement": true,
-          "x": 102,
-          "y": 92
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_player_name",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderPlayerName"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 74,
-          "y": 17
+          "x": 64,
+          "y": -3
         }
       },
       {
@@ -113,109 +74,14 @@
         "data": {
           "name": "label_lv",
           "text": {
-            "fixedValue": "Lv:"
+            "fixedValue": "LV:"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 55,
-          "y": 147
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_exp",
-          "text": {
-            "fixedValue": "EXP:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 55,
-          "y": 156
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_hp",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderHP"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 196
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_mp",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderMP"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 186
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_stg",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderSTG"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 166
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_spd",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderSPD"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 176
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_render_exp",
-          "text": {
-            "fixedValue": "",
-            "name": "RenderEXP"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 156
+          "x": 66,
+          "y": 134
         }
       },
       {
@@ -230,115 +96,158 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 143,
-          "y": 146
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_profile",
-          "image": "profile_buttton.png",
-          "hoveredImage": "profile_hov.png",
-          "x": 188,
-          "y": 54
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_social",
-          "image": "social_button.png",
-          "hoveredImage": "social_hov.png",
-          "x": 188,
-          "y": 78
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_message",
-          "image": "message_button.png",
-          "hoveredImage": "message_hov.png",
-          "x": 188,
-          "y": 102
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_navigation",
-          "image": "navigation_button.png",
-          "hoveredImage": "navigation_hov.png",
-          "x": 188,
-          "y": 126
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_settings",
-          "image": "settings_button.png",
-          "hoveredImage": "settings_hov.png",
-          "x": 188,
-          "y": 150
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "equiptment_button.png",
-          "use1Xscale": false,
-          "x": 212,
-          "y": 55
+          "x": 156,
+          "y": 135
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_equiptment",
+          "name": "label_proc_render_hp",
           "text": {
-            "fixedValue": "Equiptment"
+            "fixedValue": "",
+            "name": "RenderHP"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 229,
-          "y": 60
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "item_button.png",
-          "use1Xscale": false,
-          "x": 212,
-          "y": 37
+          "x": 156,
+          "y": 145
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_items",
+          "name": "label_hp",
           "text": {
-            "fixedValue": "Items"
+            "fixedValue": "HP:"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 229,
-          "y": 42
+          "x": 66,
+          "y": 145
         }
       },
       {
-        "type": "image",
+        "type": "label",
         "data": {
+          "name": "label_proc_render_stg",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSTG"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_str",
+          "text": {
+            "fixedValue": "STR:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_spd",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderSPD"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spd",
+          "text": {
+            "fixedValue": "SPD:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_mp",
+          "text": {
+            "fixedValue": "",
+            "name": "RenderMP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mp",
+          "text": {
+            "fixedValue": "MP:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 66,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_render_player_name",
+          "text": {
+            "fixedValue": "re",
+            "name": "RenderPlayerName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 85,
+          "y": 3
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_skills_button",
           "image": "skills_button.png",
-          "use1Xscale": false,
-          "x": 212,
-          "y": 73
+          "hoveredImage": "skills_button_hov.png",
+          "x": 230,
+          "y": 68
         }
       },
       {
@@ -352,8 +261,96 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 230,
-          "y": 78
+          "x": 248,
+          "y": 73
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "RenderPlayerInStatScreen"
+          },
+          "scale": 45,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 116,
+          "y": 90
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_passive_button",
+          "image": "passive_button.png",
+          "hoveredImage": "passive_button_hov.png",
+          "x": 318,
+          "y": 68
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_sword_button",
+          "image": "sword_button.png",
+          "hoveredImage": "sword_button_hov.png",
+          "x": 318,
+          "y": 86
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stats_button",
+          "image": "stats_button.png",
+          "hoveredImage": "stats_button_hov.png",
+          "x": 318,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stats",
+          "text": {
+            "fixedValue": "Stats"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 336,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_passive",
+          "text": {
+            "fixedValue": "Passive"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 336,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weapon",
+          "text": {
+            "fixedValue": "Sword skills"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 336,
+          "y": 91
         }
       }
     ],

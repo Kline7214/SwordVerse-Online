@@ -3,22 +3,14 @@ package net.mcreator.swordverseonline.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
 
 import net.mcreator.swordverseonline.world.inventory.SAOinterfaceMenu;
-import net.mcreator.swordverseonline.procedures.RenderSTGProcedure;
-import net.mcreator.swordverseonline.procedures.RenderSPDProcedure;
-import net.mcreator.swordverseonline.procedures.RenderPlayerNameProcedure;
-import net.mcreator.swordverseonline.procedures.RenderPlayerInStatScreenProcedure;
-import net.mcreator.swordverseonline.procedures.RenderMPProcedure;
-import net.mcreator.swordverseonline.procedures.RenderLvProcedure;
-import net.mcreator.swordverseonline.procedures.RenderHPProcedure;
-import net.mcreator.swordverseonline.procedures.RenderEXPProcedure;
+import net.mcreator.swordverseonline.network.SAOinterfaceButtonMessage;
+import net.mcreator.swordverseonline.SwordverseOnlineMod;
 
 import java.util.HashMap;
 
@@ -53,9 +45,6 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
-		if (RenderPlayerInStatScreenProcedure.execute(world, x, y, z, entity) instanceof LivingEntity livingEntity) {
-			InventoryScreen.renderEntityInInventoryFollowsAngle(ms, this.leftPos + -87, this.topPos + -8, 40, 0f + (float) Math.atan((this.leftPos + -87 - mouseX) / 40.0), (float) Math.atan((this.topPos + -57 - mouseY) / 40.0), livingEntity);
-		}
 		this.renderTooltip(ms, mouseX, mouseY);
 	}
 
@@ -66,10 +55,6 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("swordverse_online:textures/screens/profilebg.png"));
-		this.blit(ms, this.leftPos + -146, this.topPos + -108, 0, 0, 135, 200, 135, 200);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -89,33 +74,6 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_stg"), -144, 46, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_spd"), -144, 56, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_mp"), -144, 66, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_hp"), -144, 76, -12829636);
-		this.font.draw(poseStack,
-
-				RenderPlayerNameProcedure.execute(world, x, y, z, entity), -125, -103, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_lv"), -144, 27, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.swordverse_online.sa_ointerface.label_exp"), -144, 36, -12829636);
-		this.font.draw(poseStack,
-
-				RenderHPProcedure.execute(entity), -56, 76, -12829636);
-		this.font.draw(poseStack,
-
-				RenderMPProcedure.execute(entity), -56, 66, -12829636);
-		this.font.draw(poseStack,
-
-				RenderSTGProcedure.execute(entity), -56, 46, -12829636);
-		this.font.draw(poseStack,
-
-				RenderSPDProcedure.execute(entity), -56, 56, -12829636);
-		this.font.draw(poseStack,
-
-				RenderEXPProcedure.execute(entity), -56, 36, -12829636);
-		this.font.draw(poseStack,
-
-				RenderLvProcedure.execute(entity), -56, 26, -12829636);
 	}
 
 	@Override
@@ -126,23 +84,27 @@ public class SAOinterfaceScreen extends AbstractContainerScreen<SAOinterfaceMenu
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_profile = new ImageButton(this.leftPos + -11, this.topPos + -66, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_profile.png"), 20, 40, e -> {
+		imagebutton_profile = new ImageButton(this.leftPos + -10, this.topPos + -53, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_profile.png"), 20, 40, e -> {
+			if (true) {
+				SwordverseOnlineMod.PACKET_HANDLER.sendToServer(new SAOinterfaceButtonMessage(0, x, y, z));
+				SAOinterfaceButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_profile", imagebutton_profile);
 		this.addRenderableWidget(imagebutton_profile);
-		imagebutton_social = new ImageButton(this.leftPos + -11, this.topPos + -42, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_social.png"), 20, 40, e -> {
+		imagebutton_social = new ImageButton(this.leftPos + -10, this.topPos + -29, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_social.png"), 20, 40, e -> {
 		});
 		guistate.put("button:imagebutton_social", imagebutton_social);
 		this.addRenderableWidget(imagebutton_social);
-		imagebutton_message = new ImageButton(this.leftPos + -11, this.topPos + -18, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_message.png"), 20, 40, e -> {
+		imagebutton_message = new ImageButton(this.leftPos + -10, this.topPos + -5, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_message.png"), 20, 40, e -> {
 		});
 		guistate.put("button:imagebutton_message", imagebutton_message);
 		this.addRenderableWidget(imagebutton_message);
-		imagebutton_navigation = new ImageButton(this.leftPos + -11, this.topPos + 6, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_navigation.png"), 20, 40, e -> {
+		imagebutton_navigation = new ImageButton(this.leftPos + -10, this.topPos + 19, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_navigation.png"), 20, 40, e -> {
 		});
 		guistate.put("button:imagebutton_navigation", imagebutton_navigation);
 		this.addRenderableWidget(imagebutton_navigation);
-		imagebutton_settings = new ImageButton(this.leftPos + -11, this.topPos + 30, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_settings.png"), 20, 40, e -> {
+		imagebutton_settings = new ImageButton(this.leftPos + -10, this.topPos + 43, 20, 20, 0, 0, 20, new ResourceLocation("swordverse_online:textures/screens/atlas/imagebutton_settings.png"), 20, 40, e -> {
 		});
 		guistate.put("button:imagebutton_settings", imagebutton_settings);
 		this.addRenderableWidget(imagebutton_settings);

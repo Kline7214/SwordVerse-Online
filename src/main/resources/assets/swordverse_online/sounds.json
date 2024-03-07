@@ -1,0 +1,56 @@
+{
+  "death_particale": {
+    "subtitle": "subtitles.death_particale",
+    "sounds": [
+      {
+        "name": "swordverse_online:particles_death",
+        "stream": false
+      }
+    ]
+  },
+  "confirm": {
+    "subtitle": "subtitles.confirm",
+    "sounds": [
+      {
+        "name": "swordverse_online:confirm",
+        "stream": false
+      }
+    ]
+  },
+  "dialog_close": {
+    "subtitle": "subtitles.dialog_close",
+    "sounds": [
+      {
+        "name": "swordverse_online:dialog_close",
+        "stream": false
+      }
+    ]
+  },
+  "menu": {
+    "subtitle": "subtitles.menu",
+    "sounds": [
+      {
+        "name": "swordverse_online:menu_popup",
+        "stream": false
+      }
+    ]
+  },
+  "message": {
+    "subtitle": "subtitles.message",
+    "sounds": [
+      {
+        "name": "swordverse_online:message",
+        "stream": false
+      }
+    ]
+  },
+  "interface_dropdown": {
+    "subtitle": "subtitles.interface_dropdown",
+    "sounds": [
+      {
+        "name": "swordverse_online:orb_dropdown",
+        "stream": false
+      }
+    ]
+  }
+}

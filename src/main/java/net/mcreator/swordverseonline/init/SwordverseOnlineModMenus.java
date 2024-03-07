@@ -12,12 +12,10 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.swordverseonline.world.inventory.UpgradeMenu;
-import net.mcreator.swordverseonline.world.inventory.SocialMenu;
-import net.mcreator.swordverseonline.world.inventory.SettingsMenu;
 import net.mcreator.swordverseonline.world.inventory.SAOinterfaceMenu;
-import net.mcreator.swordverseonline.world.inventory.ProfileMenu;
-import net.mcreator.swordverseonline.world.inventory.NavigationMenu;
-import net.mcreator.swordverseonline.world.inventory.MessageMenu;
+import net.mcreator.swordverseonline.world.inventory.InterfaceStatsMenu;
+import net.mcreator.swordverseonline.world.inventory.InterfaceSkillsMenu;
+import net.mcreator.swordverseonline.world.inventory.InterfaceProfileMenu;
 import net.mcreator.swordverseonline.world.inventory.CraftingMenu;
 import net.mcreator.swordverseonline.world.inventory.BlacksmithGuiMenu;
 import net.mcreator.swordverseonline.world.inventory.AppraisalMenu;
@@ -30,9 +28,7 @@ public class SwordverseOnlineModMenus {
 	public static final RegistryObject<MenuType<CraftingMenu>> CRAFTING = REGISTRY.register("crafting", () -> IForgeMenuType.create(CraftingMenu::new));
 	public static final RegistryObject<MenuType<UpgradeMenu>> UPGRADE = REGISTRY.register("upgrade", () -> IForgeMenuType.create(UpgradeMenu::new));
 	public static final RegistryObject<MenuType<SAOinterfaceMenu>> SA_OINTERFACE = REGISTRY.register("sa_ointerface", () -> IForgeMenuType.create(SAOinterfaceMenu::new));
-	public static final RegistryObject<MenuType<ProfileMenu>> PROFILE = REGISTRY.register("profile", () -> IForgeMenuType.create(ProfileMenu::new));
-	public static final RegistryObject<MenuType<SocialMenu>> SOCIAL = REGISTRY.register("social", () -> IForgeMenuType.create(SocialMenu::new));
-	public static final RegistryObject<MenuType<MessageMenu>> MESSAGE = REGISTRY.register("message", () -> IForgeMenuType.create(MessageMenu::new));
-	public static final RegistryObject<MenuType<NavigationMenu>> NAVIGATION = REGISTRY.register("navigation", () -> IForgeMenuType.create(NavigationMenu::new));
-	public static final RegistryObject<MenuType<SettingsMenu>> SETTINGS = REGISTRY.register("settings", () -> IForgeMenuType.create(SettingsMenu::new));
+	public static final RegistryObject<MenuType<InterfaceProfileMenu>> INTERFACE_PROFILE = REGISTRY.register("interface_profile", () -> IForgeMenuType.create(InterfaceProfileMenu::new));
+	public static final RegistryObject<MenuType<InterfaceSkillsMenu>> INTERFACE_SKILLS = REGISTRY.register("interface_skills", () -> IForgeMenuType.create(InterfaceSkillsMenu::new));
+	public static final RegistryObject<MenuType<InterfaceStatsMenu>> INTERFACE_STATS = REGISTRY.register("interface_stats", () -> IForgeMenuType.create(InterfaceStatsMenu::new));
 }

@@ -6,7 +6,7 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.swordverseonline.network.SwordverseOnlineModVariables;
@@ -29,13 +29,15 @@ public class PlayerEXPProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof Monster && sourceentity instanceof Player) {
-			{
-				double _setval = (sourceentity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).experience + 1;
-				sourceentity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.experience = _setval;
-					capability.syncPlayerVariables(sourceentity);
-				});
+		if (entity instanceof Mob) {
+			if (sourceentity instanceof Player) {
+				{
+					double _setval = (sourceentity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SwordverseOnlineModVariables.PlayerVariables())).experience + 1;
+					sourceentity.getCapability(SwordverseOnlineModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.experience = _setval;
+						capability.syncPlayerVariables(sourceentity);
+					});
+				}
 			}
 		}
 	}

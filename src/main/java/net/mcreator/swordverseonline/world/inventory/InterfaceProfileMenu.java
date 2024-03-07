@@ -24,7 +24,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class SocialMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class InterfaceProfileMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -37,8 +37,8 @@ public class SocialMenu extends AbstractContainerMenu implements Supplier<Map<In
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public SocialMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(SwordverseOnlineModMenus.SOCIAL.get(), id);
+	public InterfaceProfileMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(SwordverseOnlineModMenus.INTERFACE_PROFILE.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

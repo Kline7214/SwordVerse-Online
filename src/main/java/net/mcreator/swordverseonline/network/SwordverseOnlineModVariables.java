@@ -132,7 +132,7 @@ public class SwordverseOnlineModVariables {
 	public static class PlayerVariables {
 		public double Strength = 5.0;
 		public double Speed = 0.1;
-		public double healthPoints = 0;
+		public double healthPoints = 0.0;
 		public double magicPower = 100.0;
 		public double points = 0;
 		public double experience = 0.0;
